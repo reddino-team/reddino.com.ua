@@ -4,11 +4,11 @@ body {
 }
 
 .clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden; 
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; 
 }
 
 .header {
@@ -62,29 +62,6 @@ body {
 	text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
-.top-header__social {
-	margin: 27px 15px 7px 15px;;
-}
-
-.callback-box {
-    display: inline-block;
-    margin: 15px 20px 0 20px;
-    padding: 10px 15px 10px 5px;
-    border-radius: 10px;
-    border: 1px solid #fff;
-}
-
-.callback-box .callback-btn {
-    color: #fff;
-    cursor: pointer;
-    font-family: Helvetica;
-    font-size: 100%;
-}
-
-.callback-box:hover {
-	box-shadow: 0 0 8px rgba(255, 255, 255, .5);
-}
-
 .tagline {
 	font-family: Helvetica;
 	color: #fff;
@@ -97,12 +74,8 @@ body {
 	animation-duration: 4s;
 }
 
-.calc {
-	display: none;
-}
-
 .logo {
-	  opacity: 1;
+	 opacity: 1;
     -webkit-transform: scale(1,1);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 550ms;
