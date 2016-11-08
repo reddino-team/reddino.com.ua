@@ -162,7 +162,15 @@
 				<section class="feedback">
 					
 					<div class="feedback__mail">
-						
+						<h1 class="feedback__header">Напишите нам!</h1>
+						<form class="feedback__form" action="#">
+							<label for="name"><input type="text" name="name" id="name" placeholder="Ваше имя *" required></label>
+							<label for="email"><input type="email" name="email" id="email" placeholder="Ваш E-mail *" required></label>
+							<label for="tel"><input type="tel" name="tel" id="tel" placeholder="Телефон в формате +380ххххххххх"></label>
+							<label for="message"><textarea name="message" id="message"  placeholder="Ваше сообщение *" required></textarea></label>
+							<input type="submit" id="submitbtn" name="submitbtn" value="Отправить сообщение"> 
+
+						</form>
 					</div>
 
 					<div class="feedback__news"> <!-- Я ПРЕДЛАГАЮ СЮДА ВСТАВИТЬ ПОСЛЕДНИЕ НОВОСТИ ИЗ БЛОГА -->

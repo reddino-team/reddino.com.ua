@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica;
+}
+
+.container {
+	width: 1100px;
+	margin: 0 auto;
+	background-color: green;
+}
+
+.feedback {
+	background-color: lightblue;
+
+}
+
+.feedback__mail {
+	height: 450px;
+	width: 50%;
+	padding-top: 20px;
+	background-color: darkred;
+	text-align: center;
+}
+
+.feedback__form {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	width: 80%;
+	margin: 0 auto;
+}
+
+#name, #email, #tel, #message {
+	width: 100%;
+	height: 40px;
+	background: none;
+	margin-top: 20px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	font-size: 16px;
+	padding-left: 20px;
+}
+
+#message {
+	height: 120px;
+	padding-top: 0.5em;
+}
+
+#name:focus, #email:focus, #tel:focus, #message:focus {
+	border: 2px solid green;
+	border-radius: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    font-family: Helvetica;
+}
+ 
+::-moz-placeholder  {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    font-family: Helvetica;
+}  /* Firefox 19+ */
+ 
+:-moz-placeholder {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    font-family: Helvetica;
+}  /* Firefox 18- */
+ 
+:-ms-input-placeholder {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    font-family: Helvetica;
+}
+ 
+::placeholder {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    font-family: Helvetica;
+}
+
+#submitbtn {
+	margin-top: 20px;
+	margin-left: 50%;
+    background: #30ad64;
+    border: none;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+
+}
