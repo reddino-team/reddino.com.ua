@@ -1,0 +1,121 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; 
+}
+
+.header {
+    width: 100%;
+    position: relative;
+	height: 650px;
+	background: url('../img/header/slide.jpg') 100% 100% no-repeat;
+	background-size: cover;
+}
+
+.top-header {
+	width: 100%;
+	background: rgba(36, 35, 33, 0.5);
+	position: fixed;
+	z-index: 50000;
+}
+
+.top-header__container {
+	max-width: 1100px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.top-header__menu  {
+	float: right;
+	margin-top: 10px;
+}
+
+.logo {
+	width: 100px;
+	background-color: rgb(255, 0, 74);
+	border-radius: 2px;
+	margin: 5px 0;
+	display: inline-block;
+}
+
+.menu__item {
+	float: left;
+	position: relative;
+	padding: 10px 5px;
+    margin: 0 5px;
+	font-family: Helvetica;
+	font-size: 100%;
+	color: #fff;  
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.menu__item:hover {
+	text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.top-header__social {
+	margin: 27px 15px 7px 15px;;
+}
+
+.callback-box {
+    display: inline-block;
+    margin: 15px 20px 0 20px;
+    padding: 10px 15px 10px 5px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.callback-box .callback-btn {
+    color: #fff;
+    cursor: pointer;
+    font-family: Helvetica;
+    font-size: 100%;
+}
+
+.callback-box:hover {
+	box-shadow: 0 0 8px rgba(255, 255, 255, .5);
+}
+
+.tagline {
+	font-family: Helvetica;
+	color: #fff;
+	font-size: 180%;
+	position: absolute;
+	font-weight: bold;
+	text-align: center;
+	top: 40%;
+	left: 35%;
+	animation-duration: 4s;
+}
+
+.calc {
+	display: none;
+}
+
+.logo {
+	  opacity: 1;
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 550ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 550ms;
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.1,1.1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 550ms;
+    -moz-transform: scale(1.1,1.1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 550ms;
+}
