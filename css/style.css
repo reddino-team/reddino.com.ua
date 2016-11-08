@@ -50,7 +50,7 @@
 }
 
 #name:focus, #email:focus, #tel:focus, #message:focus {
-	border: 2px solid green;
+	border: 2px solid gray;
 	border-radius: 0;
 }
 
