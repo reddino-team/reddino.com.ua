@@ -114,10 +114,11 @@ background: #636363;
 }
 
 .feedback__paragraph {
-	font-family: Helvetica;
 	width: 77%;
-	color: #fff;
 	margin: 20px auto 10px auto;
+	font-family: Helvetica;
+	color: #fff;
+	
 }
 
 .feedback__mail {
@@ -129,36 +130,37 @@ background: #636363;
 }
 
 .feedback__form {
+	width: 90%;
+	padding-top: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	
 	background: rgba(54,54,54,1);
-background: -moz-linear-gradient(left, rgba(54,54,54,1) 0%, rgba(102,110,112,1) 50%, rgba(54,54,54,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(54,54,54,1)), color-stop(50%, rgba(102,110,112,1)), color-stop(100%, rgba(54,54,54,1)));
-background: -webkit-linear-gradient(left, rgba(54,54,54,1) 0%, rgba(102,110,112,1) 50%, rgba(54,54,54,1) 100%);
-background: -o-linear-gradient(left, rgba(54,54,54,1) 0%, rgba(102,110,112,1) 50%, rgba(54,54,54,1) 100%);
-background: -ms-linear-gradient(left, rgba(54,54,54,1) 0%, rgba(102,110,112,1) 50%, rgba(54,54,54,1) 100%);
-background: linear-gradient(to right, rgba(54,54,54,1) 0%, rgba(102,110,112,1) 50%, rgba(54,54,54,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363636', endColorstr='#363636', GradientType=1 );
+	background: -moz-linear-gradient(left, rgba(54,54,54,1) 0%, rgba(102,110,112,1) 50%, rgba(54,54,54,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(54,54,54,1)), color-stop(50%, rgba(102,110,112,1)), color-stop(100%, rgba(54,54,54,1)));
+	background: -webkit-linear-gradient(left, rgba(54,54,54,1) 0%, rgba(102,110,112,1) 50%, rgba(54,54,54,1) 100%);
+	background: -o-linear-gradient(left, rgba(54,54,54,1) 0%, rgba(102,110,112,1) 50%, rgba(54,54,54,1) 100%);
+	background: -ms-linear-gradient(left, rgba(54,54,54,1) 0%, rgba(102,110,112,1) 50%, rgba(54,54,54,1) 100%);
+	background: linear-gradient(to right, rgba(54,54,54,1) 0%, rgba(102,110,112,1) 50%, rgba(54,54,54,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363636', endColorstr='#363636', GradientType=1 );
 
--webkit-box-shadow: 0px 0px 10px 2px rgba(20,18,20,1);
--moz-box-shadow: 0px 0px 10px 2px rgba(20,18,20,1);
-box-shadow: 0px 0px 10px 2px rgba(20,18,20,1);
-
-	width: 90%;
-	padding-top: 20px;
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(20,18,20,1);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(20,18,20,1);
+	box-shadow: 0px 0px 10px 2px rgba(20,18,20,1);
 }
 
 #name, #email, #tel, #message {
 	width: 80%;
 	height: 40px;
-	background: #fff;
 	margin-top: 20px;
+	background: #fff;
+	padding-left: 10px;
+	
 	border: 1px solid #737373;
 	border-radius: 5px;
+	
 	font-size: 16px;
-	padding-left: 10px;
-
 }
 
 #message {
@@ -178,40 +180,41 @@ box-shadow: 0px 0px 10px 2px rgba(20,18,20,1);
 }
  
 ::-moz-placeholder  {
-    color: #fff;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: rgba(54,54,54,0.3);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     font-family: Helvetica;
 }  /* Firefox 19+ */
  
 :-moz-placeholder {
-    color: #fff;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: rgba(54,54,54,0.3);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     font-family: Helvetica;
 }  /* Firefox 18- */
  
 :-ms-input-placeholder {
-    color: #fff;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: rgba(54,54,54,0.3);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     font-family: Helvetica;
 }
  
 ::placeholder {
-    color: #fff;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+   color: rgba(54,54,54,0.3);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     font-family: Helvetica;
 }
 
 #submitbtn {
+	width: 85%;
+    height: 40px;
 	margin: 20px auto;
+    
     background: rgb(255, 0, 74);
     border: none;
-    width: 85%;
-    height: 40px;
     border-radius: 5px;
+   
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-
 }
 
 /* END OF FEEDBACK */
