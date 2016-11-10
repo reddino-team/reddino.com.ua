@@ -157,20 +157,39 @@
 
         </section>
 
-        <section class="feedback">
+</main>        
 
+<section class="feedback">
+
+    <div class="container feedback__container">
+            <div class="feedback__box">
+                <h2>Обратная связь</h2>
+                <p>Чтобы получить консультацию у специалистов команды reddino, кликните по кнопке внизу.</p>
+                <div class="feedback__button">Связаться с reddino</div>
+
+            </div>
+
+            
             <div class="feedback__mail">
 
+                <form class="feedback__form" action="#">
+                    <h1 class="feedback__header">Напишите нам</h1>
+                    <p class="feedback__paragraph">Оставьте свои контактные данные и наш специалист свяжется с Вами в течение 30 минут</p>
+                    <label for="name"><input type="text" name="name" id="name" placeholder="Ваше имя *" required></label>
+                    <label for="email"><input type="email" name="email" id="email" placeholder="Ваш E-mail *" required></label>
+                    <label for="tel"><input type="tel" name="tel" id="tel" placeholder="Телефон в формате +380ххххххххх"></label>
+                    <label for="message"><textarea name="message" id="message"  placeholder="Ваше сообщение *" required></textarea></label>
+                    <input type="submit" id="submitbtn" name="submitbtn" value="Отправить сообщение"> 
+
+                </form>
             </div>
 
             <div class="feedback__news"> <!-- Я ПРЕДЛАГАЮ СЮДА ВСТАВИТЬ ПОСЛЕДНИЕ НОВОСТИ ИЗ БЛОГА -->
-
+                
             </div>
-
-        </section>
-
     </div>
-</main>
+
+</section>
 
 <footer class="footer">
     <div class="social-links">
