@@ -161,7 +161,7 @@ body {
     background-size: cover;
     color: #f8f9fa;
     display: block;
-    background-color: rgba(28, 32, 39, 0.75);;
+    background-color: rgba(28, 32, 39, 0.7);;
     background-blend-mode: multiply;
 }
 
@@ -184,6 +184,18 @@ body {
     text-decoration: none;
     margin: 0 5px;
     display: inline-block;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    -webkit-transition: all .15s linear;
+    line-height: 80px;
+    border: white 2px solid;
+    color: white;
+}
+
+.social-links a:hover{
+    color: #ef0111;
+    border: #ef0111 2px solid;
 }
 
 .social-links a img {
