@@ -161,7 +161,7 @@ body {
     background-size: cover;
     color: #f8f9fa;
     display: block;
-    background-color: rgba(28, 32, 39, 0.7);;
+    background-color: rgba(36, 35, 33, 0.8);;
     background-blend-mode: multiply;
 }
 
@@ -225,7 +225,7 @@ body {
 }
 
 .copyright {
-    background-color: rgb(28, 32, 39);
+    background-color: rgb(36, 35, 33);
     text-align: center;
     padding: 10px;
 }
