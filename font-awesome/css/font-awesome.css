@@ -11,6 +11,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+    font-family: 'Abeatbykai';
+    src: url('..//fonts/abeakrg_-webfont.woff2') format('woff2'),
+         url('..//fonts/abeakrg_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
