@@ -8,6 +8,7 @@
 </head>
 <body>
 
+
 <header class="header">
     <section class="top-header">
         <div class="container top-header__container clearfix">
@@ -157,7 +158,8 @@
 
         </section>
 
-</main>        
+</main>  
+
 
 <section class="feedback">
 
@@ -165,13 +167,12 @@
             <div class="feedback__box">
                 <h2>Обратная связь</h2>
                 <p>Чтобы получить консультацию у специалистов команды reddino, кликните по кнопке внизу.</p>
-                <div class="feedback__button">Связаться с reddino</div>
+                <div id="feedback__button">Связаться с reddino</div>
 
             </div>
 
-            
-            <div class="feedback__mail">
-
+            <div class="feedback__mail" id="feedback">
+                <div class="feedback__close"><i class="fa fa-times" aria-hidden="true" id="close-window"></i></div>
                 <form class="feedback__form" action="#">
                     <h1 class="feedback__header">Напишите нам</h1>
                     <p class="feedback__paragraph">Оставьте свои контактные данные и наш специалист свяжется с Вами в течение 30 минут</p>
@@ -229,6 +230,6 @@
 
 
 </footer>
-
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

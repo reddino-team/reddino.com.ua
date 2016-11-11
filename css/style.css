@@ -155,7 +155,6 @@ body {
 
 /* FEEDBACK */
 
-
 .feedback {
 background: rgb(28, 32, 39);
 font-family: Helvetica;
@@ -183,7 +182,7 @@ font-family: Helvetica;
     color: #fff;
 }
 
-.feedback__button {
+#feedback__button {
     width: 250px;
     height: 60px;
     display: flex;
@@ -199,7 +198,7 @@ font-family: Helvetica;
     cursor: pointer;
 }
 
-.feedback__button:hover {
+#feedback__button:hover {
    border: 2px solid rgb(239, 1, 17); 
 }
 
@@ -213,7 +212,6 @@ font-family: Helvetica;
     margin: 20px auto 10px auto;
     color: #fff;
     position: relative;
-    
 }
 
 .feedback__mail {
@@ -222,13 +220,12 @@ font-family: Helvetica;
     min-width: 400px;
     padding: 20px 0;
     text-align: center;
-    /* display: none; */
-/*     background: rgba(36, 35, 33, 0.8);
-position: fixed;
-top: 0;
-left: 0;
-z-index: 60000; */
-
+    display: none;
+    background: rgba(36, 35, 33, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 60000;
 }
 
 .feedback__form {
@@ -252,6 +249,15 @@ z-index: 60000; */
     -moz-box-shadow: 0px 0px 10px 2px rgba(20,18,20,1);
     box-shadow: 0px 0px 10px 2px rgba(20,18,20,1);
 }
+
+.feedback__close {
+    height: 0px;
+    margin-left: 630px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
 
 #name, #email, #tel, #message {
     width: 80%;
