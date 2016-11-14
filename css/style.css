@@ -44,7 +44,7 @@ body {
 .logo {
     width: 100px;
     background-color: rgb(239, 1, 17);
-    border-radius: 2px;
+    border-radius: 3px;
     margin: 5px 0;
     display: inline-block;
 }
@@ -68,14 +68,15 @@ body {
 }
 
 .tagline {
-    font-family: Helvetica;
-    color: #fff;
+    top: 40%;
+    left: 15%;
+    right: 15%;
     font-size: 180%;
     position: absolute;
+    color: #fff;
     font-weight: bold;
     text-align: center;
-    top: 40%;
-    left: 35%;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.8);
     animation-duration: 4s;
 }
 
@@ -108,15 +109,24 @@ body {
 
 .techno__abilities {
   	padding: 7em 0 5em;
+    align-items: center;
   	position: relative;;
   	font-size: 100%;
 }
-
-.techno__title {
-  	margin: 1% 0;
-  	font-size: 250%;
+.techno__abilities__logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.techno__title {
+  	margin: 1% 0.5%;
+  	font-size: 230%;
+}
+.logo--techno {
+    width: 120px;
+    margin: 1% 0.5%;
+}
 .techno__title span {
   	font-family: Abeatbykai;
   	font-weight: bold;
@@ -162,10 +172,30 @@ body {
   	width: 135%;
   	height: auto;
 }
-
+.techno__serv {
+    margin: 3em 1em;
+    padding: 3em 1em;
+    border-top: 1px solid #828c8f;
+    border-bottom: 1px solid #828c8f;
+}
+.techno__paragraph__heading {
+      color: #828c8f;
+      font-size: 1.25em;
+      font-style: italic;
+      font-family: Georgia;
+      text-align: center;
+}
+.techno__paragraph__heading--author {
+  margin-top: 20px;
+  font-size: 1em;
+}
+.techno__paragraph__heading--author::before {
+  content: '\2014 \00A0';
+}
 /* FEEDBACK */
 
 .feedback {
+margin-top: 3em;
 background: rgb(28, 32, 39);
 font-family: Helvetica;
 }
@@ -210,7 +240,7 @@ font-family: Helvetica;
 }
 
 #feedback__button:hover {
-   border: 2px solid rgb(239, 1, 17); 
+   border: 2px solid rgb(239, 1, 17);
 }
 
 .feedback__header {
@@ -246,7 +276,7 @@ font-family: Helvetica;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
+
     background: rgba(54,54,54,1);
     background: -moz-linear-gradient(left, rgba(54,54,54,1) 0%, rgba(102,110,112,1) 50%, rgba(54,54,54,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(54,54,54,1)), color-stop(50%, rgba(102,110,112,1)), color-stop(100%, rgba(54,54,54,1)));
@@ -288,10 +318,10 @@ font-family: Helvetica;
     margin-top: 20px;
     background: #fff;
     padding-left: 10px;
-    
+
     border: 1px solid #737373;
     border-radius: 5px;
-    
+
     font-size: 16px;
 }
 
@@ -310,25 +340,25 @@ font-family: Helvetica;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     font-family: Helvetica;
 }
- 
+
 ::-moz-placeholder  {
     color: rgba(54,54,54,0.3);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     font-family: Helvetica;
 }  /* Firefox 19+ */
- 
+
 :-moz-placeholder {
     color: rgba(54,54,54,0.3);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     font-family: Helvetica;
 }  /* Firefox 18- */
- 
+
 :-ms-input-placeholder {
     color: rgba(54,54,54,0.3);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     font-family: Helvetica;
 }
- 
+
 ::placeholder {
    color: rgba(54,54,54,0.3);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -339,11 +369,11 @@ font-family: Helvetica;
     width: 85%;
     height: 40px;
     margin: 20px auto;
-    
+
     background: rgb(239, 1, 17);
     border: none;
     border-radius: 5px;
-   
+
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -352,8 +382,8 @@ font-family: Helvetica;
 #submitbtn:active {
     background: rgba(36, 35, 33, 0.8);
 }
-
 /* END OF FEEDBACK */
+
 
 /*<=======FOOTER============>*/
 
@@ -460,13 +490,49 @@ font-family: Helvetica;
     padding: 10px;
 
 }
+.about_us p {
+  text-indent: 3%;
+  padding-top: 1em;
+}
 .about_us div{
     font-size: 17px;
     display: inline;
     text-align: justify;
+    color: #3f373c;
 }
 
 @media (max-width: 510px) {
     .about_us img {
         width: 100%;
     }}
+    /*<========SECTION LEARNING========>*/
+    .learning {
+      padding: 1%;
+    }
+    .learning img {
+      max-width: 50%;
+    }
+
+    .learning p {
+      font-size: 17px;
+      display: inline;
+      text-align: justify;
+      text-indent: 3%;
+      padding: 20px;
+      color: #3f373c;
+    }
+
+    .learning {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+    }
+
+    @media (max-width: 510px) {
+      .learning {
+        display: inline-block;
+      }
+      .learning img {
+        max-width: 100%;
+      }
+    }
