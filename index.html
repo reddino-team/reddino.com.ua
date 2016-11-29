@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/jquery.jcarousel.js"></script>
 </head>
 <body>
 
@@ -15,7 +17,7 @@
             <a href="/" class="logo">
                 <?xml version="1.0" encoding="UTF-8"?>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                     viewBox="0 0 220 120">
+                     viewBox="0 0 250 70">
                     <defs>
                         <font-face font-family="abeatbyKai">
                             <font-face-src>
@@ -27,7 +29,7 @@
                         </font-face>
                     </defs>
                     <text font-family="'abeatbyKai',sans-serif" font-size="45" fill="rgb(255, 255, 255)">
-                        <tspan x="30" y="80">reddino</tspan>
+                        <tspan x="50" y="55">reddino</tspan>
                     </text>
                 </svg>
             </a>
@@ -38,12 +40,15 @@
                 <a href="#" class="menu__item">Наши работы</a>
                 <a href="#" class="menu__item">О нас</a>
                 <a href="#" class="menu__item">Контакты</a>
-                <a href="#" class="menu__item">Новости</a>
+                <a href="#blog" class="menu__item">Блог</a>
             </nav>
         </div>
     </section>
-
-      <p class="tagline">Мы специализируемся на передовых технологиях и креативных решениях для роста вашей компании! Наша цель – ваш успех!</p>
+      <div class="tagline-wrapper">
+          <p class="tagline">Welcome To <span class="tagline__reddino">reddino</span></p>
+          <p class="tagline__web">creative web for you</p>
+      </div>
+      
 
 </header>
 
@@ -210,6 +215,68 @@
 
 </main>
 
+<section class="blog" id="blog">
+    <div class="blog__container clearfix">
+        <h2>БЛОГ</h2>
+        <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h3>
+
+        <div class="wrapper-jcarousel">
+            <div class="jcarousel clearfix">
+                <ul class="carousel-list">
+                    <li class="jcarousel-step">
+                        <div class="wraper-jcarousel__step">
+                            <img src="img/blog/img1.jpg" alt="" class="jcarousel__step-img">              
+                            <div class="jcarousel__step-content">
+                                <a class="jcarousel__step-title" href="#">Lorem ipsum dolor sit amet do</a>
+                                <p class="jcarousel__step-info">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                            </div>
+                        </div>          
+                    </li>
+
+                    <li class="jcarousel-step">
+                        <div class="wraper-jcarousel__step">
+                            <img src="img/blog/img2.jpg" alt="" class="jcarousel__step-img">
+                            <div class="jcarousel__step-content">
+                                <a class="jcarousel__step-title" href="#">Lorem ipsum dolor sit amet do</a>
+                                <p class="jcarousel__step-info">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                            </div>
+                        </div>          
+                    </li>
+
+                    <li class="jcarousel-step">
+                        <div class="wraper-jcarousel__step">
+                            <img src="img/blog/img3.jpg" alt="" class="jcarousel__step-img">
+                            <div class="jcarousel__step-content">
+                                <a class="jcarousel__step-title" href="#">Lorem ipsum dolor sit amet do</a>
+                                <p class="jcarousel__step-info">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                            </div>
+                        </div>          
+                    </li>
+
+                    <li class="jcarousel-step">
+                        <div class="wraper-jcarousel__step">
+                            <img src="img/blog/img2.jpg" alt="" class="jcarousel__step-img">
+                            <div class="jcarousel__step-content">
+                                <a class="jcarousel__step-title" href="#">Lorem ipsum dolor sit amet do</a>
+                                <p class="jcarousel__step-info">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                            </div>
+                        </div>          
+                    </li>
+                </ul>  
+            </div>
+        </div>
+      
+        <a class="jcarousel-arrow jcarousel-prev" href="#"></a>
+        <a class="jcarousel-arrow jcarousel-next" href="#"></a>
+      </div>  
+      
+      </div>  
+
+
+
+
+    </div>
+</section>
 
 <section class="feedback">
 
@@ -220,7 +287,6 @@
                 <div id="feedback__button">Связаться с reddino</div>
 
             </div>
-
             <div class="feedback__mail" id="feedback">
 
                 <form class="feedback__form" action="#">
@@ -234,10 +300,6 @@
                     <input type="submit" id="submitbtn" name="submitbtn" value="Отправить сообщение">
 
                 </form>
-            </div>
-
-            <div class="feedback__news"> <!-- Я ПРЕДЛАГАЮ СЮДА ВСТАВИТЬ ПОСЛЕДНИЕ НОВОСТИ ИЗ БЛОГА -->
-
             </div>
     </div>
 

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: MyriadPro; /* Имя шрифта */
+    src: url(../fonts/MyriadProRegular/MyriadProRegular.ttf); /* Путь к файлу со шрифтом */
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -25,13 +30,13 @@ body {
     width: 100%;
     position: relative;
     height: 650px;
-    background: url('../img/header/slide.jpg') 100% 100% no-repeat;
+    background: url('../img/header/main.jpg') 100% 100% no-repeat;
     background-size: cover;
 }
 
 .top-header {
     width: 100%;
-    background: rgba(36, 35, 33, 0.8);
+    background: rgba(36, 35, 33, 0.5);
     position: fixed;
     z-index: 50000;
 }
@@ -55,7 +60,7 @@ body {
     padding: 10px 5px;
     margin: 0 5px;
     font-family: Helvetica;
-    font-size: 100%;
+    font-size: 85%;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -67,17 +72,31 @@ body {
     color: #ef0111;
 }
 
-.tagline {
-    top: 40%;
-    left: 15%;
-    right: 15%;
-    font-size: 180%;
+.tagline-wrapper {
+    display: inline-block;
+    margin: 0 auto;    
     position: absolute;
+    top: 40%;
+    left: 30%;
+
+}
+
+.tagline {
+    font-size: 350%;
     color: #fff;
-    font-weight: bold;
-    text-align: center;
     text-shadow: 0px 1px 2px rgba(0,0,0,0.8);
     animation-duration: 4s;
+    text-align: center;
+}
+
+.tagline__reddino {
+    color: #ef0111;
+}
+
+.tagline__web {
+    color: #f1f2f1;
+    font-size: 200%;
+    text-align: center;
 }
 
 .logo {
@@ -192,11 +211,120 @@ body {
 .techno__paragraph__heading--author::before {
   content: '\2014 \00A0';
 }
+
+/* BLOG */
+.blog {
+    width: 100%;
+    background: #fff;
+    padding: 150px 0;
+}
+
+.blog__container {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.blog__container h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-family: MyriadPro;
+}
+
+.blog__container h3 {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+    font-family: MyriadPro;
+}
+
+.wrapper-jcarousel {
+    max-width: 900px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.jcarousel-step {
+    list-style-type: none;
+    float: left;
+    width: 300px;
+    height: 450px;
+    margin-right: 0px;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+}
+
+.wraper-jcarousel__step {
+    padding: 0px 18px;
+}
+
+.jcarousel-arrow {
+    position: absolute;
+    top: 60%;
+    width: 30px;
+    height: 55px;
+    text-align: center;
+    text-decoration: none;
+    background: url("../img/blog/arrow-sprite.png"); 
+}
+
+.jcarousel-prev {
+    right: 0;
+}
+
+.jcarousel-next {
+    left: 0;
+    background-position: 0px 56px; 
+}
+
+.jcarousel__step-img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    background-size: cover;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.jcarousel__step-content {
+    color: #000;
+    font-family: Helvetica;
+    font-size: 14px;
+    margin: 15px 0px;
+    padding: 0 20px;
+}
+
+.jcarousel__step-title {
+    color: #000;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.jcarousel__step-info {
+    text-align: justify;
+}
+
+
+
 /* FEEDBACK */
 
 .feedback {
 margin-top: 3em;
-background: rgb(28, 32, 39);
+background: #121212;
 font-family: Helvetica;
 }
 
@@ -393,8 +521,7 @@ font-family: Helvetica;
     background-size: cover;
     color: #f8f9fa;
     display: block;
-   /* background-color: rgba(36, 35, 33, 0.8);*/
-    background-color: rgba(28, 32, 39, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: multiply;
 }
 
@@ -425,7 +552,7 @@ font-family: Helvetica;
 
 .social-links a {
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 15px;
     display: inline-block;
     height: 70px;
     width: 70px;
@@ -468,7 +595,7 @@ font-family: Helvetica;
 }
 
 .copyright {
-    background-color: rgb(28, 32, 39);
+    background-color: #121212;
     text-align: center;
     padding: 10px;
 }
