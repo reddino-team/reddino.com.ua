@@ -5,329 +5,228 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fm.revealator.jquery.css">
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/fm.revealator.jquery.js"></script>
     <script src="js/jquery.jcarousel.js"></script>
+
 </head>
 <body>
+    <header class="header">
+        <section class="top-header">
+            <div class="container top-header__container clearfix">
+                <a href="/" class="logo">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         viewBox="0 0 250 70">
+                        <defs>
+                            <font-face font-family="abeatbyKai">
+                                <font-face-src>
+                                    <font-face-uri
+                                            xlink:href="http://reddino.com.ua/assets/fonts/abeatbyKaiRegular.otf#abeatbyKai">
+                                        <font-face-format string="otf"/>
+                                    </font-face-uri>
+                                </font-face-src>
+                            </font-face>
+                        </defs>
+                        <text font-family="'abeatbyKai',sans-serif" font-size="45" fill="rgb(255, 255, 255)">
+                            <tspan x="50" y="55">reddino</tspan>
+                        </text>
+                    </svg>
+                </a>
 
+                <nav class="menu top-header__menu"> <!-- ВСТАВИТЬ ССЫЛКИ -->
+                    <a href="#" class="menu__item">Главная</a>
+                    <a href="#services" class="menu__item">Услуги</a>
+                    <a href="#" class="menu__item">Наши работы</a>
+                    <a href="#about" class="menu__item">О нас</a>
+                    <a href="#blog" class="menu__item">Блог</a>
+                    <a href="#feedback_section" class="menu__item">Контакты</a>
+                </nav>
+            </div>
+        </section>
+        <div class="tagline-wrapper">
+            <p class="tagline">Welcome To <span class="tagline__reddino">reddino</span></p>
+            <p class="tagline__web">creative web for you</p>
+        </div>
+    </header>
 
-<header class="header">
-    <section class="top-header">
-        <div class="container top-header__container clearfix">
-            <a href="/" class="logo">
-                <?xml version="1.0" encoding="UTF-8"?>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                     viewBox="0 0 250 70">
-                    <defs>
-                        <font-face font-family="abeatbyKai">
-                            <font-face-src>
-                                <font-face-uri
-                                        xlink:href="http://reddino.com.ua/assets/fonts/abeatbyKaiRegular.otf#abeatbyKai">
-                                    <font-face-format string="otf"/>
-                                </font-face-uri>
-                            </font-face-src>
-                        </font-face>
-                    </defs>
-                    <text font-family="'abeatbyKai',sans-serif" font-size="45" fill="rgb(255, 255, 255)">
-                        <tspan x="50" y="55">reddino</tspan>
-                    </text>
-                </svg>
-            </a>
+<!-- БЛОКИ РАССТАВЛЕНЫ СОГЛАСНО МАКЕТУ -->
+    <section class="services" id="services">
+        <h2 class="services__title">Услуги</h2>
+        <h3 class="services__paragraph">Новый формат творческого агентства, которое заботится о серьезных проблемах!</h3>
+        <div class="services-tabs">
 
-            <nav class="menu top-header__menu"> <!-- ВСТАВИТЬ ССЫЛКИ -->
-                <a href="#" class="menu__item">Главная</a>
-                <a href="#" class="menu__item">Услуги</a>
-                <a href="#" class="menu__item">Наши работы</a>
-                <a href="#about" class="menu__item">О нас</a>
-                <a href="#feedback_section" class="menu__item">Контакты</a>
-                <a href="#blog" class="menu__item">Блог</a>
-            </nav>
+            <ul class="services__tabs-caption clearfix">
+                <li class="services__tabs-active"><span class="services__tabs-img services__tabs-web"></span>Разработка сайтов</li>
+                <li class="services-tabs2"><span class="services__tabs-img services__tabs-seo"></span>SEO продвижение</li>
+                <li><span class="services__tabs-img services__tabs-test"></span>Тестирование</li>
+            </ul>
+            <div class="services__tabs-content services__tabs-active">
+                <h4 class="services__content-caption">Разработка сайтов</h4>
+                <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+            </div>
+
+            <div  class="services__tabs-content">
+                <h4 class="services__content-caption">SEO продвижение</h4>
+                <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+            </div>
+
+            <div class="services__tabs-content">
+                <h4 class="services__content-caption">Тестирование</h4>
+                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+            </div>
         </div>
     </section>
-      <div class="tagline-wrapper">
-          <p class="tagline">Welcome To <span class="tagline__reddino">reddino</span></p>
-          <p class="tagline__web">creative web for you</p>
-      </div>
-      
 
-</header>
-
-
-<main class="main"> <!-- БЛОКИ РАССТАВЛЕНЫ СОГЛАСНО МАКЕТУ -->
-    <div class="container main__container">
-
-        <section class="techno clearfix">
-          <div class="techno__abilities">
-            <div class="techno__abilities__logo">
-            <h1 class="techno__title">web studio<span></h1>
-              <a href="/" class="logo logo--techno">
-                  <?xml version="1.0" encoding="UTF-8"?>
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                       viewBox="0 0 240 120">
-                      <defs>
-                          <font-face font-family="abeatbyKai">
-                              <font-face-src>
-                                  <font-face-uri
-                                          xlink:href="http://reddino.com.ua/assets/fonts/abeatbyKaiRegular.otf#abeatbyKai">
-                                      <font-face-format string="otf"/>
-                                  </font-face-uri>
-                              </font-face-src>
-                          </font-face>
-                      </defs>
-                      <text font-family="'abeatbyKai',sans-serif" font-size="60" fill="rgb(255, 255, 255)">
-                          <tspan x="10" y="80">reddino</tspan>
-                      </text>
-                  </svg>
-              </a>
-            </div>
-            <p class="techno__paragraph">Новый формат творческого агентства, которое заботится о серьезных проблемах!</p>
-          </div>
-
-          <div class="techno__serv__item techno__serv__item--develope clearfix"> <!-- РАЗРАБОТКА САЙТОВ -->
-            <a href="#"></a>
-            <div class="techno__serv__text">
-              <img class="techno__img" src="img/techno/corporation.jpg" alt="" />
-              <h2>Разработка </br>корпоративных сайтов</h2>
-              <p></p>
-            </div>
-          </div>
-
-          <div class="techno__serv__item techno__serv__item--onlineShop clearfix"> <!-- ПОДДЕРЖКА И ПРОДВИЖЕНИЕ -->
-            <a href="#"></a>
-            <div class="techno__serv__text">
-              <img class="techno__img" src="img/techno/online-shop.jpg" alt="" />
-              <h2>Разработка </br>интернет магазинов</h2>
-              <p></p>
-            </div>
-          </div>
-
-          <div class="techno__serv__item techno__serv__item--mobile clearfix"> <!-- РАЗРАБОТКА МОБИЛЬНЫХ ПРИЛОЖЕНИЙ -->
-            <a href="#"></a>
-            <img class="techno__img" src="img/techno/mobile.jpg" alt="" />
-            <div class="techno__serv__text">
-              <h2>Разработка </br>мобильных приложений</h2>
-              <p></p>
-            </div>
-          </div>
-
-          <div class="techno__serv__item techno__serv__item--design clearfix"> <!-- WEB-DESIGN САЙТОВ -->
-            <a href="#"></a>
-            <img class="techno__img" src="img/techno/web-design.jpg" alt="" />
-            <div class="techno__serv__text">
-              <h2>Web дизайн</h2>
-              <p></p>
-            </div>
-          </div>
-
-          <div class="techno__serv__item techno__serv__item--seo clearfix"> <!-- НАПОЛНЕНИЕ САЙТОВ -->
-            <a href="#"></a>
-            <img class="techno__img" src="img/techno/SEO.jpg"  alt="" />
-            <div class="techno__serv__text">
-              <h2>SEO оптимизация</h2>
-              <p></p>
-            </div>
-          </div>
-
-        <div class="techno__serv__item techno__serv__item--test clearfix"> <!-- ТЕСТИРОВАНИЕ САЙТОВ -->
-          <a href="#"></a>
-          <img class="techno__img" src="img/techno/testing1.jpg" alt="" />
-          <div class="techno__serv__text">
-            <h2>Тестирование</h2>
-            <p></p>
-          </div>
+    <section class="portfolio">
+        <div class="portfolio__works portfolio__works--work1">
+            <a href="#" class="portfolio__example">
+            </a>
         </div>
 
-      </section>
-
-      <section class="portfolio">
-
-            <div class="portfolio__works portfolio__works--work1">
-                <a href="#" class="portfolio__example">
-
-                </a>
-            </div>
-
-            <div class="portfolio__works portfolio__works--work2">
-                <a href="#" class="portfolio__example">
-
-                </a>
-            </div>
-
-            <div class="portfolio__works portfolio__works--work3">
-                <a href="#" class="portfolio__example">
-
-                </a>
-            </div>
-
-            <div class="portfolio__works portfolio__works--work4">
-                <a href="#" class="portfolio__example">
-
-                </a>
-            </div>
-
-      </section>
-
-      <section class="partners">
-
-            <div class="partners__clients partners__clients--client1">
-
-            </div>
-
-            <div class="partners__clients partners__clients--client2">
-
-            </div>
-
-            <div class="partners__clients partners__clients--client3">
-
-            </div>
-
-      </section>
-
-</main>
-
-<div class="techno__serv">
-  <p class="techno__paragraph techno__paragraph__heading">"Что бы нового мы ни создавали, мы должны дать людям возможность переходить от старых инструментов и идей к новым."</p>
-  <p class="techno__paragraph__heading techno__paragraph__heading--author">Bjarne Stroustrup</p>
-</div>
-
-<section class="about clearfix" id="about">
-    <div class="background">
-        <div class="container about__container">
-            <h2>НАША <span class="about__header">КОМАНДА</span></h2>
-           
-            <div class="about__item">
-                <div class="about__item__empty-block"></div>
-                <div class="about__item__circle">
-                    <p>Кто мы</p>
-                </div>
-                <div class="about__item__content">
-                    Мы — команда креативных дизайнеров, программистов, специалистов по SEO-оптимизации, которые с радостью и удовольствием помогут воплотить Ваши идеи в жизнь и продвинут Ваш бизнес
-                </div>
-            </div>  
-
-            <div class="about__divline"></div>
-
-            <div class="about__item">
-                <div class="about__item__content about__item__content--left"> <!-- Модификаторы left, right назначаются для четных (считая сверху) пунктов раздела -->
-                    Мы разрабатываем не стандартный, а индивидуальный, уникальный проект, ориентированный на Ваши интересы и потребности               
-                </div>
-                <div class="about__item__circle">
-                    <p>Почему мы</p>
-                </div>
-                <div class="about__item__empty-block about__item__empty-block--right"></div>
-            </div> 
-
-            <div class="about__divline"></div>
-
-            <div class="about__item">
-                <div class="about__item__empty-block"></div>
-                <div class="about__item__circle">
-                    <p>Наша цель</p>
-                </div>
-                <div class="about__item__content">
-                    Разрабатывать успешные, креативные и прибыльные для Вас проекты
-                </div>
-            </div> 
-
-             <div class="about__divline"></div>
-
-            <div class="about__item">
-                <div class="about__item__content about__item__content--left"> <!-- Модификаторы left, right назначаются для четных (считая сверху) пунктов раздела -->
-                    Слушаем – Думаем – Предлагаем варианты – Разрабатываем и передаем готовый продукт               
-                </div>
-                <div class="about__item__circle">
-                    <p>Как мы работаем</p>
-                </div>
-                <div class="about__item__empty-block about__item__empty-block--right"></div>
-            </div> 
-
-            <div class="about__divline"></div>
-
-            <div class="about__item">
-                <div class="about__item__empty-block"></div>
-                <div class="about__item__circle">
-                    <p>Наши навыки</p>
-                </div>
-                <div class="about__item__content">
-                    HTML5, CSS3, Javascript, JQuery, Mysql, MSSQL
-                </div>
-            </div> 
-
+        <div class="portfolio__works portfolio__works--work2">
+            <a href="#" class="portfolio__example">
+            </a>
         </div>
+
+        <div class="portfolio__works portfolio__works--work3">
+            <a href="#" class="portfolio__example">
+            </a>
+        </div>
+        <div class="portfolio__works portfolio__works--work4">
+            <a href="#" class="portfolio__example">
+            </a>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="partners__clients partners__clients--client1">
+        </div>
+
+        <div class="partners__clients partners__clients--client2">
+        </div>
+
+        <div class="partners__clients partners__clients--client3">
+        </div>
+    </section>
+
+    <div class="techno__serv">
+        <p class="techno__paragraph techno__paragraph__heading">"Что бы нового мы ни создавали, мы должны дать людям возможность переходить от старых инструментов и идей к новым."</p>
+        <p class="techno__paragraph__heading techno__paragraph__heading--author">Bjarne Stroustrup</p>
     </div>
-</section>
 
+    <section class="about clearfix" id="about">
+        <div class="about-background">
+            <div class="container about__container">
+                <h2>НАША <span class="about__header">КОМАНДА</span></h2>               
+                <div class="about__item">
+                    <div class="about__item__empty-block"></div>
+                    <div class="about__item__circle">
+                        <p>Кто мы</p>
+                    </div>
+                    <div class="about__item__content revealator-slideright revealator-once">
+                        Мы — команда креативных дизайнеров, программистов, специалистов по SEO-оптимизации, которые с радостью и удовольствием помогут воплотить Ваши идеи в жизнь и продвинут Ваш бизнес
+                    </div>
+                </div>  
 
+                <div class="about__divline"></div>
 
+                <div class="about__item">
+                    <div class="about__item__content about__item__content--left revealator-slideleft revealator-once"> <!-- Модификаторы left, right назначаются для четных (считая сверху) пунктов раздела -->
+                        Мы разрабатываем не стандартный, а индивидуальный, уникальный проект, ориентированный на Ваши интересы и потребности               
+                    </div>
+                    <div class="about__item__circle">
+                        <p>Почему мы</p>
+                    </div>
+                    <div class="about__item__empty-block about__item__empty-block--right"></div>
+                </div> 
 
+                <div class="about__divline"></div>
 
+                <div class="about__item">
+                    <div class="about__item__empty-block"></div>
+                    <div class="about__item__circle">
+                        <p>Наша цель</p>
+                    </div>
+                    <div class="about__item__content revealator-slideright revealator-once">
+                        Разрабатывать успешные, креатиrevealator-slideright revealator-onceвные и прибыльные для Вас проекты
+                    </div>
+                </div> 
 
-<section class="blog" id="blog">
-    <div class="blog__container clearfix">
-        <h2>БЛОГ</h2>
-        <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h3>
+                <div class="about__divline"></div>
 
-        <div class="wrapper-jcarousel">
-            <div class="jcarousel clearfix">
-                <ul class="carousel-list">
-                    <li class="jcarousel-step">
-                        <div class="wraper-jcarousel__step">
-                            <img src="img/blog/img1.jpg" alt="" class="jcarousel__step-img">              
-                            <div class="jcarousel__step-content">
-                                <a class="jcarousel__step-title" href="#">Lorem ipsum dolor sit amet do</a>
-                                <p class="jcarousel__step-info">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-                            </div>
-                        </div>          
-                    </li>
-
-                    <li class="jcarousel-step">
-                        <div class="wraper-jcarousel__step">
-                            <img src="img/blog/img2.jpg" alt="" class="jcarousel__step-img">
-                            <div class="jcarousel__step-content">
-                                <a class="jcarousel__step-title" href="#">Lorem ipsum dolor sit amet do</a>
-                                <p class="jcarousel__step-info">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-                            </div>
-                        </div>          
-                    </li>
-
-                    <li class="jcarousel-step">
-                        <div class="wraper-jcarousel__step">
-                            <img src="img/blog/img3.jpg" alt="" class="jcarousel__step-img">
-                            <div class="jcarousel__step-content">
-                                <a class="jcarousel__step-title" href="#">Lorem ipsum dolor sit amet do</a>
-                                <p class="jcarousel__step-info">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-                            </div>
-                        </div>          
-                    </li>
-
-                    <li class="jcarousel-step">
-                        <div class="wraper-jcarousel__step">
-                            <img src="img/blog/img2.jpg" alt="" class="jcarousel__step-img">
-                            <div class="jcarousel__step-content">
-                                <a class="jcarousel__step-title" href="#">Lorem ipsum dolor sit amet do</a>
-                                <p class="jcarousel__step-info">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-                            </div>
-                        </div>          
-                    </li>
-                </ul>  
+                <div class="about__item">
+                    <div class="about__item__content about__item__content--left revealator-slideleft revealator-once"> <!-- Модификаторы left, right назначаются для четных (считая сверху) пунктов раздела -->
+                        Слушаем – Думаем – Предлагаем варианты – Разрабатываем и передаем готовый продукт               
+                    </div>
+                    <div class="about__item__circle">
+                        <p>Как мы работаем</p>
+                    </div>
+                    <div class="about__item__empty-block about__item__empty-block--right"></div>
+                </div> 
             </div>
         </div>
-      
-        <a class="jcarousel-arrow jcarousel-prev" href="#"></a>
-        <a class="jcarousel-arrow jcarousel-next" href="#"></a>
-      </div>  
-      
-      </div>  
+    </section>
 
+    <section class="blog" id="blog">
+        <div class="blog__container clearfix">
+            <h2>БЛОГ</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h3>
 
+            <div class="wrapper-jcarousel">
+                <div class="jcarousel clearfix">
+                    <ul class="carousel-list">
+                        <li class="jcarousel-step">
+                            <div class="wraper-jcarousel__step">
+                                <img src="img/blog/img1.jpg" alt="" class="jcarousel__step-img">              
+                                <div class="jcarousel__step-content">
+                                    <a class="jcarousel__step-title" href="#">Lorem ipsum dolor sit amet do</a>
+                                    <p class="jcarousel__step-info">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                                </div>
+                            </div>          
+                        </li>
 
+                        <li class="jcarousel-step">
+                            <div class="wraper-jcarousel__step">
+                                <img src="img/blog/img2.jpg" alt="" class="jcarousel__step-img">
+                                <div class="jcarousel__step-content">
+                                    <a class="jcarousel__step-title" href="#">Lorem ipsum dolor sit amet do</a>
+                                    <p class="jcarousel__step-info">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                                </div>
+                            </div>          
+                        </li>
 
-    </div>
-</section>
+                        <li class="jcarousel-step">
+                            <div class="wraper-jcarousel__step">
+                                <img src="img/blog/img3.jpg" alt="" class="jcarousel__step-img">
+                                <div class="jcarousel__step-content">
+                                    <a class="jcarousel__step-title" href="#">Lorem ipsum dolor sit amet do</a>
+                                    <p class="jcarousel__step-info">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                                </div>
+                            </div>          
+                        </li>
 
-<section class="feedback" id="feedback_section">
+                        <li class="jcarousel-step">
+                            <div class="wraper-jcarousel__step">
+                                <img src="img/blog/img2.jpg" alt="" class="jcarousel__step-img">
+                                <div class="jcarousel__step-content">
+                                    <a class="jcarousel__step-title" href="#">Lorem ipsum dolor sit amet do</a>
+                                    <p class="jcarousel__step-info">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                                </div>
+                            </div>          
+                        </li>
+                    </ul>  
+                </div>
+            </div>
+          
+            <a class="jcarousel-arrow jcarousel-prev" href="#"></a>
+            <a class="jcarousel-arrow jcarousel-next" href="#"></a>
+          </div>  
+    </section>
 
-    <div class="container feedback__container">
+    <section class="feedback" id="feedback_section">
+        <div class="container feedback__container">
             <div class="feedback__box">
                 <h2>Обратная связь</h2>
                 <p>Чтобы получить консультацию у специалистов команды reddino, кликните по кнопке внизу.</p>
@@ -335,7 +234,6 @@
 
             </div>
             <div class="feedback__mail" id="feedback">
-
                 <form class="feedback__form" action="#">
                     <div class="feedback__close"><i class="fa fa-times" aria-hidden="true" id="close-window"></i></div>
                     <h1 class="feedback__header">Напишите нам</h1>
@@ -345,52 +243,46 @@
                     <label for="tel"><input type="tel" name="tel" id="tel" placeholder="Телефон в формате +380ххххххххх"></label>
                     <label for="message"><textarea name="message" id="message"  placeholder="Ваше сообщение *" required></textarea></label>
                     <input type="submit" id="submitbtn" name="submitbtn" value="Отправить сообщение">
-
                 </form>
             </div>
-    </div>
-
-</section>
-
-<footer class="footer">
-    <div class="social-links">
-        <div class="container">
-            <div class="social">
-                <p>Не стесняйся, давай общаться</p>
-                <a href="https://www.facebook.com/groups/709891805825208/?fref=ts" target="_blank">
-                    <i class="fa fa-facebook fa-2x"></i></a>
-                <a href="https://vk.com/reddino" target="_blank">
-                    <i class="fa fa-vk fa-2x"></i></a>
-                <a href="https://www.instagram.com/webreddino/" target="_blank">
-                    <i class="fa fa-instagram fa-2x"></i></a>
-            </div>
-
-            <div class="text-box">
-                <p>Контакты:</p>
-                <br>
-                <p>49000, Украина, г. Днепр (Днепропетровск)
-                    <br>
-                    ул. Центарльная, 1а, офис 1</p>
-                <br>
-                <p>Телефоны:</p>
-                <p>056 777 77 77</p>
-                <p>050 555 55 55</p>
-                <br>
-                <p>E-mail: web.red.dino@gmail.com</p>
-
-            </div>
-
         </div>
-    </div>
-    <div style="clear: both;"></div>
-    <div class="copyright">
-        <p>© Copyright</p>
+    </section>
 
-    </div>
+    <footer class="footer">
+        <div class="social-links clearfix container">
+            
+                <div class="social">
+                    <p>Не стесняйся, давай общаться</p>
+                    <a href="https://www.facebook.com/groups/709891805825208/?fref=ts" target="_blank">
+                        <i class="fa fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://vk.com/reddino" target="_blank">
+                        <i class="fa fa-vk fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/webreddino/" target="_blank">
+                        <i class="fa fa-instagram fa-2x"></i>
+                    </a>
+                </div>
 
-
-
-</footer>
-<script type="text/javascript" src="js/script.js"></script>
+                <div class="text-box">
+                    <p>Контакты:</p>
+                    <br>
+                    <p>49000, Украина, г. Днепр (Днепропетровск)
+                        <br>
+                        ул. Центарльная, 1а, офис 1</p>
+                    <br>
+                    <p>Телефоны:</p>
+                    <p>056 777 77 77</p>
+                    <p>050 555 55 55</p>
+                    <br>
+                    <p>E-mail: web.red.dino@gmail.com</p>
+                </div>
+            
+        </div>
+        <div class="copyright">
+            <p>© Copyright</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

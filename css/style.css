@@ -11,6 +11,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Helvetica, Tahoma, Arial, sans-serif;
+    background: #ede7e7;
 }
 
 .clearfix:after {
@@ -120,96 +121,137 @@ body {
 
 /*<=========БЛОК УСЛУГИ==========>*/
 
-.techno {
-  	display: inline-block;
+.services {
   	color: #3f373c;
   	text-align: center;
-}
-
-.techno__abilities {
-  	padding: 7em 0 5em;
-    align-items: center;
-  	position: relative;;
-  	font-size: 100%;
-}
-.techno__abilities__logo {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.techno__title {
-  	margin: 1% 0.5%;
-  	font-size: 230%;
-}
-.logo--techno {
-    width: 120px;
-    margin: 1% 0.5%;
-}
-.techno__title span {
-  	font-family: Abeatbykai;
-  	font-weight: bold;
-  	color: #ef0111;
-}
-
-.techno__paragraph {
-  	font-size: 125%;
-  	margin: 0 auto;
-}
-
-.techno__serv__item {
-    width: 31%;
-    margin: 0 1%;
     position: relative;
-    display: inline-block;
+}
+
+.services__title {
+  	margin: 3% 0.5%;
+  	font-size: 230%;
+    font-family: MyriadPro;
+    text-transform: uppercase;
+}
+
+.services__paragraph {
+  	font-size: 125%;
+    font-family: MyriadPro;
+    margin-bottom: 3%;
+}
+
+.services-tabs {
+    width: 100%;
+    margin: 0 0 30px;
+}
+
+.services__tabs-web {
+    background: url('../img/services/web.png');
+}
+
+.services__tabs-seo {
+    background: url('../img/services/seo.png');
+}
+
+.services__tabs-test {
+    background: url('../img/services/test.png');
+}
+
+.services__tabs-img {
+    display: block;
+    margin: 55px auto;
+    width: 120px;
+    height: 121px;
+    background-size: cover;
+}
+
+.services__tabs-caption {
+    padding-left: 0;
+    width: 100%;
+    list-style: none;
+    background: #FFF;
+}
+
+.services__tabs-caption li {
+    width: 33.25%;
+    height: 350px;
+    float: left;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    background: rgba(239,36,51,0.9);
     text-align: center;
-    overflow: hidden;
-    *display: inline;
-    vertical-align: top;
+    font-family: MyriadPro;
+    font-size: 22px;
 }
 
-@media (max-width: 936px) {
-    .techno__serv__item {
-        width: 47%;
-    }}
-
-@media (max-width: 510px) {
-    .techno__serv__item {
-        width: 97%;
-    }}
-
-.techno__serv__item h2 {
-    -webkit-margin-before: 0.83em;
-    -webkit-margin-after: 0.83em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-  	 font-size: 120%;
-     font-weight: bold;
+.services-tabs2 {
+    border-right: 1px solid rgb(100, 100, 100);
+    border-left: 1px solid rgb(100, 100, 100);
 }
 
-.techno__img {
-  	width: 135%;
-  	height: auto;
+.services__tabs-caption li:hover {
+    color: #fff;
 }
+
+.services__tabs-caption li:hover span {
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+    margin: 35px auto;
+}
+
+.services__tabs-caption .services__tabs-active {
+    color: #fff;
+    background: rgba(35,35,35,0.7);
+}
+
+.services__tabs-content {
+    display: none;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 300px;
+    background: #ede7e7;
+    padding: 0 12px;
+}
+
+.services__content-caption {
+    font-size: 30px;
+    font-weight: 200;
+    color: #ed5045;
+    margin: 35px 0 25px;
+}
+
+.services__tabs-content p {
+    text-align: justify;
+    font-size: 20px;
+    margin: 5px 40px;
+    line-height: 30px;
+    text-indent: 30px;
+}
+
+.services__tabs-content.services__tabs-active {
+    display: block;
+}
+
 .techno__serv {
     margin: 3em 1em;
     padding: 3em 1em;
     border-top: 1px solid #828c8f;
     border-bottom: 1px solid #828c8f;
 }
+
 .techno__paragraph__heading {
-      color: #828c8f;
-      font-size: 1.25em;
-      font-style: italic;
-      font-family: Georgia;
-      text-align: center;
+    color: #828c8f;
+    font-size: 1.25em;
+    font-style: italic;
+    font-family: Georgia;
+    text-align: center;
 }
+
 .techno__paragraph__heading--author {
-  margin-top: 20px;
-  font-size: 1em;
-}
-.techno__paragraph__heading--author::before {
-  content: '\2014 \00A0';
+    margin-top: 20px;
+    font-size: 1em;
 }
 
 /* ABOUT */
@@ -219,7 +261,7 @@ body {
     background-size: cover;
 }
 
-.background {
+.about-background {
     background-color: rgba(35, 35, 35, 0.85);
     padding: 50px 0;
 }
@@ -300,10 +342,11 @@ body {
 }
 
 /* BLOG */
+
 .blog {
     width: 100%;
     background: #fff;
-    padding: 150px 0;
+    padding: 100px 0 150px;
 }
 
 .blog__container {
@@ -405,12 +448,9 @@ body {
     text-align: justify;
 }
 
-
-
 /* FEEDBACK */
 
 .feedback {
-margin-top: 3em;
 background: #121212;
 font-family: Helvetica;
 }
@@ -439,17 +479,13 @@ font-family: Helvetica;
 
 #feedback__button {
     width: 250px;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
+    padding: 20px 0;
     border: 2px solid #fff;
     border-radius: 5px;
     margin: 40px auto;
-
     text-transform: uppercase;
     color: #fff;
-
     cursor: pointer;
     -webkit-transition: all .15s linear;
 }
@@ -491,7 +527,6 @@ font-family: Helvetica;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
     background: rgba(54,54,54,1);
     background: -moz-linear-gradient(left, rgba(54,54,54,1) 0%, rgba(102,110,112,1) 50%, rgba(54,54,54,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(54,54,54,1)), color-stop(50%, rgba(102,110,112,1)), color-stop(100%, rgba(54,54,54,1)));
@@ -526,17 +561,14 @@ font-family: Helvetica;
     cursor: pointer;
 }
 
-
 #name, #email, #tel, #message {
     width: 80%;
     height: 40px;
     margin-top: 20px;
     background: #fff;
     padding-left: 10px;
-
     border: 1px solid #737373;
     border-radius: 5px;
-
     font-size: 16px;
 }
 
@@ -584,11 +616,9 @@ font-family: Helvetica;
     width: 85%;
     height: 40px;
     margin: 20px auto;
-
     background: rgb(239, 1, 17);
     border: none;
     border-radius: 5px;
-
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -603,18 +633,14 @@ font-family: Helvetica;
 /*<=======FOOTER============>*/
 
 .footer {
-    clear: both;
     background: url("../img/lets-get-social.jpg");
     background-size: cover;
-    color: #f8f9fa;
-    display: block;
     background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: multiply;
+    color: #fff;
 }
 
 .social-links {
-    color: white;
-    height: 200px;
     padding: 100px 0;
 }
 
@@ -623,7 +649,6 @@ font-family: Helvetica;
     margin-left: 1%;
     margin-right: 1%;
     float: left;
-    display: inline-block;
     text-align: center;
 }
 
@@ -662,12 +687,9 @@ font-family: Helvetica;
 
 .social p {
     font-family: Helvetica;
-    word-wrap: break-word;
     margin: 0 0 20px 0;
     text-transform: uppercase;
-    /*font-weight: bold;*/
     font-size: 20px;
-
 }
 
 .text-box {
@@ -676,9 +698,7 @@ font-family: Helvetica;
 
 .text-box p {
     font-family: Helvetica;
-    word-wrap: break-word;
     font-size: 17px;
-
 }
 
 .copyright {
@@ -698,16 +718,18 @@ font-family: Helvetica;
     float: left;
     margin: 0 20px 20px 0;
 }
+
 .about_us h1{
     text-align: center;
     font-size: 40px;
     padding: 10px;
+}
 
-}
 .about_us p {
-  text-indent: 3%;
-  padding-top: 1em;
+    text-indent: 3%;
+    padding-top: 1em;
 }
+
 .about_us div{
     font-size: 17px;
     display: inline;

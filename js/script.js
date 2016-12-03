@@ -28,23 +28,29 @@
     });
 })(jQuery);
 
+
+(function($) {
+    $(function() {
+        $('ul.services__tabs-caption').on('click', 'li:not(.services__tabs-active)', function() {
+            $(this)
+                .addClass('services__tabs-active').siblings().removeClass('services__tabs-active')
+                .closest('div.services-tabs').find('div.services__tabs-content').removeClass('services__tabs-active').eq($(this).index()).addClass('services__tabs-active');
+        });
+    });
+})(jQuery);
+
  
 $(document).ready(function(){
     $(".top-header__menu").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
-
         //забираем идентификатор бока с атрибута href
         var id  = $(this).attr('href'),
-
         //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top;
-        
-        //анимируем переход на расстояние - top за 1500 мс
+        top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
 });
-
 
 
 function openFeedback() {
