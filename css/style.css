@@ -166,8 +166,7 @@ body {
 }
 
 .services__tabs-caption {
-    padding-left: 0;
-    width: 100%;
+    /*width: 100%;*/
     list-style: none;
     background: #FFF;
 }
@@ -175,23 +174,32 @@ body {
 .services__tabs-caption li {
     width: 33.25%;
     height: 350px;
+
     float: left;
-    display: block;
-    color: #fff;
+    /*display: block;*/
     cursor: pointer;
-    background: rgba(239,36,51,0.9);
+
+    background: rgba(35,35,35,0.7) no-repeat;
+    color: #fff;
     text-align: center;
     font-family: MyriadPro;
     font-size: 22px;
+
+    /**/
+    transition: 1s;
 }
 
-.services-tabs2 {
+
+/*СОЗДАЕТ БАГ С ПОЛОСКОЙ В МЕНЮ*/
+/*.services-tabs2 {
     border-right: 1px solid rgb(100, 100, 100);
     border-left: 1px solid rgb(100, 100, 100);
-}
+}*/
 
 .services__tabs-caption li:hover {
-    color: #fff;
+    color: black;
+
+    transition: 1s;
 }
 
 .services__tabs-caption li span {
@@ -205,6 +213,10 @@ body {
 
     /*ICON HOVER ON*/
     transition: 1s;
+}
+
+.services__web__content {
+  margin-top: 60px;
 }
 
 .services__web__content-article {
@@ -250,14 +262,14 @@ body {
 
 .services__tabs-caption .services__tabs-active {
     color: #fff;
-    background: rgba(35,35,35,0.7);
+    background: rgba(239,36,51,0.9) no-repeat;
 }
 
 .services__tabs-content {
     display: none;
     max-width: 1000px;
     margin: 0 auto;
-    height: 500px;
+    height: 440px;
     background: #ede7e7;
     padding: 0 12px;
 }
