@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Сайт-визитка или landing page?</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+</head>
+<body>
+    <header class="header" style="background: none; height: auto;"> <!-- отключаем фон в Header-->
+        <section class="top-header">
+            <div class="container top-header__container clearfix">
+                <a href="/" class="logo">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         viewBox="0 0 250 70">
+                        <defs>
+                            <font-face font-family="abeatbyKai">
+                                <font-face-src>
+                                    <font-face-uri
+                                            xlink:href="http://reddino.com.ua/assets/fonts/abeatbyKaiRegular.otf#abeatbyKai">
+                                        <font-face-format string="otf"/>
+                                    </font-face-uri>
+                                </font-face-src>
+                            </font-face>
+                        </defs>
+                        <text font-family="'abeatbyKai',sans-serif" font-size="45" fill="rgb(255, 255, 255)">
+                            <tspan x="50" y="55">reddino</tspan>
+                        </text>
+                    </svg>
+                </a>
+
+                <nav class="menu top-header__menu"> <!-- ВСТАВИТЬ ССЫЛКИ -->
+                    <a href="../index.html" class="menu__item">Главная</a>
+                    <a href="../index.html #services" class="menu__item">Услуги</a>
+                    <a href="../index.html" class="menu__item">Наши работы</a>
+                    <a href="../index.html #about" class="menu__item">О нас</a>
+                    <a href="../index.html #blog" class="menu__item">Блог</a>
+                    <a href="../index.html #feedback_section" class="menu__item">Контакты</a>
+                </nav>
+            </div>
+        </section>
+
+
+        <main>
+            <div class="container articles">    
+               
+                <div class="articles__news">    
+                    <h1>Сайт-визитка или landing page?</h1>
+                    <p class="articles__image"><img src="img/landing-page-business-card-website.jpg" alt="landing page or business card site"></p>
+                    
+                    <article>    
+                        <p>Наверное каждому, кто когда-нибудь задавался вопросом о создании собственного сайта, доводилось стыкаться с тяжелым выбором между сайтом-визиткой и лендингом. И, несмотря на то, что в интернете много информации, не все понимают, что именно им нужно.</p> 
+                        <p>Сайт-визитка идеально подойдет для активных людей, которые ищут дополнительный вид заработка или хотят расширить уже существующий - копирайтеров, фотографов, переводчиков, нотариусов и небольших компаний. Это отличный способ показать публике, кто Вы такой и чем Вы занимаетесь. Обычно сайт-визитка состоит из главной информации о Вас или Вашей фирме, содержит примеры работ и/или описывает вид и стоимость услуг, которые Вы можете предоставить.</p>    
+                        <p>Лендинг же, в свою очередь, маркетинговый ход, который “заставляет” посетителя стать Вашим клиентом. В последнее время особенно заметен рост длинных одностраничный сайтов, которые рекламируя товары/услуги призывают посетителя подписаться на рассылку или купить товар/услугу. Такие сайты часто содержат горячие предложения или таймеры отсчета, а текст для таких сайтов создается профессиональными копирайтерами, которые умело и ненавязчиво продают услугу либо товар.</p> 
+                        <p>Вы еще не запутались? Если все упростить, лендинг - продает товар или услугу, в то время, как сайт-визитка является Вашим лицом и ознакамливает потенциального клиента с видом, качеством и стоимостью услуг. Лендинг отличный выбор, если у Вас только один товар либо вид услуг, а бизнес-визитка - если вы фрилансер или предоставляете широкий спектр услуг.</p>
+                    </article>
+
+                    <form>
+                        <label>Комментарий<textarea rows="10" cols="100" name="comment" placeholder="Ваш комментарий"></textarea> </label>
+                        <label>Имя<input type="text" name="name" placeholder="Ваше имя" required></label>
+                        <label>Email<input type="email" name="email" placeholder="example@gmail.com" required></label>
+                        <label><input type="submit" name="submit" value="Оставить комментарий" class="submit"></label>
+                    </form>
+                </div>
+
+                <aside class="sidebar">
+                    <h2>Недавние записи</h2>
+                    <div class="links">
+                        <a href="seo.html">Что такое SEO?</a>
+                        <p class="links__date">04 декабря 2016г.</p>
+                    </div>
+                    <div class="links">
+                        <a href="testing.html">Готовим сайт к передаче заказчику. Тестирование</a>
+                        <p class="links__date">04 декабря 2016г.</p>
+                    </div>
+                    <div class="links">
+                        <a href="web-analytics.html">А вы знаете, что делает ваша веб-страница?</a>
+                        <p class="links__date">04 декабря 2016г.</p>
+                    </div>
+                    <div class="links">
+                        <a href="business-card-website-or-landing-page.html">Сайт-визитка или landing page?</a>
+                        <p class="links__date">04 декабря 2016г.</p>
+                    </div>
+                </aside>
+            
+            </div>
+
+        </main>
+
+        <section class="feedback" id="feedback_section">
+        <div class="container feedback__container">
+            <div class="feedback__box">
+                <h2>Обратная связь</h2>
+                <p>Чтобы получить консультацию у специалистов команды reddino, кликните по кнопке внизу.</p>
+                <div id="feedback__button">Связаться с reddino</div>
+
+            </div>
+            <div class="feedback__mail" id="feedback">
+                <form class="feedback__form" action="#">
+                    <div class="feedback__close"><i class="fa fa-times" aria-hidden="true" id="close-window"></i></div>
+                    <h1 class="feedback__header">Напишите нам</h1>
+                    <p class="feedback__paragraph">Оставьте свои контактные данные и наш специалист свяжется с Вами в течение 30 минут</p>
+                    <label for="name"><input type="text" name="name" id="name" placeholder="Ваше имя *" required></label>
+                    <label for="email"><input type="email" name="email" id="email" placeholder="Ваш E-mail *" required></label>
+                    <label for="tel"><input type="tel" name="tel" id="tel" placeholder="Телефон в формате +380ххххххххх"></label>
+                    <label for="message"><textarea name="message" id="message"  placeholder="Ваше сообщение *" required></textarea></label>
+                    <input type="submit" id="submitbtn" name="submitbtn" value="Отправить сообщение">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="social-links clearfix container">
+            
+                <div class="social">
+                    <p>Не стесняйся, давай общаться</p>
+                    <a href="https://www.facebook.com/groups/709891805825208/?fref=ts" target="_blank">
+                        <i class="fa fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://vk.com/reddino" target="_blank">
+                        <i class="fa fa-vk fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/webreddino/" target="_blank">
+                        <i class="fa fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+
+                <div class="text-box">
+                    <p>Контакты:</p>
+                    <br>
+                    <p>49000, Украина, г. Днепр (Днепропетровск)
+                        <br>
+                        ул. Центральная, 1а, офис 1</p>
+                    <br>
+                    <p>Телефоны:</p>
+                    <p>056 777 77 77</p>
+                    <p>050 555 55 55</p>
+                    <br>
+                    <p>E-mail: web.red.dino@gmail.com</p>
+                </div>
+            
+        </div>
+        <div class="copyright">
+            <p>© Copyright</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
