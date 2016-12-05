@@ -157,15 +157,15 @@ body {
 }
 
 .services__tabs-web {
-    background: url('../img/services/web.png') no-repeat;
+    background: url('../img/services/web-developing.svg') no-repeat;
 }
 
 .services__tabs-seo {
-    background: url('../img/services/seo.png') no-repeat;
+    background: url('../img/services/seo-developing.svg') no-repeat;
 }
 
 .services__tabs-test {
-    background: url('../img/services/test.png') no-repeat;
+    background: url('../img/services/mobile-developing.svg') no-repeat;
 }
 
 .services__tabs-img {
