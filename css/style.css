@@ -2,7 +2,17 @@
     font-family: MyriadPro; /* Имя шрифта */
     src: url(../fonts/MyriadProRegular/MyriadProRegular.ttf); /* Путь к файлу со шрифтом */
 }
+@font-face {
+    font-family: 'Abeatbykai';
+    src: url(..//fonts/Abeatbykai/abeakrg_-webfont.eot);
+    src: url(..//fonts/Abeatbykai/abeakrg_-webfont.eot) format('embedded-opentype'),
+         url(..//fonts/Abeatbykai/abeakrg_-webfont.woff2) format('woff2'),
+         url(..//fonts/Abeatbykai/abeakrg_-webfont.woff) format('woff'),
+         url(..//fonts/Abeatbykai/abeakrg_-webfont.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 * {
     padding: 0;
     margin: 0;
@@ -91,6 +101,7 @@ body {
 }
 
 .tagline__reddino {
+    font-family: 'Abeatbykai';
     color: #ef0111;
 }
 
@@ -892,7 +903,7 @@ font-family: Helvetica;
     .articles__news .submit {
         width: 91.5%;
     }
-        
+
     .sidebar {
         width: 22%;
         height: 0%;
@@ -900,7 +911,7 @@ font-family: Helvetica;
         background-color: rgb(239, 1, 17);
         padding: 0 25px;
         box-sizing: border-box;
-    }  
+    }
 
     .sidebar h2 {
         text-transform: uppercase;
