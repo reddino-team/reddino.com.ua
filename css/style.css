@@ -516,6 +516,8 @@ body {
 
 .jcarousel__step-info {
     text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* FEEDBACK */
