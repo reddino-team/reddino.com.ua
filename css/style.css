@@ -215,7 +215,8 @@ body {
     transition: 1s;
 }
 
-.services__web__content {
+.services__web__content,
+.services__seo__content {
   margin-top: 60px;
 }
 
@@ -226,7 +227,7 @@ body {
     vertical-align: top;
 }
 
-.services__web__contt-article img {
+.services__web__content-article img {
     margin-top: 0;
     padding-top: 0;
     width: 85px;
