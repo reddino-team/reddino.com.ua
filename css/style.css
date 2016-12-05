@@ -21,7 +21,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Helvetica, Tahoma, Arial, sans-serif;
-    background: #ede7e7;
+    background: #fff;
 }
 
 .clearfix:after {
@@ -283,7 +283,7 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     height: 480px;
-    background: #ede7e7;
+    background: #fff;
     padding: 0 12px;
 }
 
