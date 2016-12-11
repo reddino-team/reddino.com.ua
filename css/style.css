@@ -588,12 +588,13 @@ font-family: Helvetica;
 }
 
 .feedback__mail {
-    height: auto;
+    height: 100%;
     width: 100%;
     min-width: 400px;
     padding: 20px 0;
     text-align: center;
     display: none;
+    overflow-y: auto; 
     background: rgba(36, 35, 33, 0.8);
     position: fixed;
     top: 0;
@@ -607,7 +608,7 @@ font-family: Helvetica;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     background: rgba(54,54,54,1);
     background: -moz-linear-gradient(left, rgba(54,54,54,1) 0%, rgba(102,110,112,1) 50%, rgba(54,54,54,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(54,54,54,1)), color-stop(50%, rgba(102,110,112,1)), color-stop(100%, rgba(54,54,54,1)));
