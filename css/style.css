@@ -134,14 +134,18 @@ body {
 
 /*<=========БЛОК УСЛУГИ==========>*/
 
+
 .services {
+    height: 500px;
+
     display: flex;
     flex-direction: column;
 }
 
 .services-title {
     margin: 24px auto;
-    text-align: center;
+
+    padding-top: 60px;
 }
 
 .services-title > h2 {
@@ -155,17 +159,39 @@ body {
 }
 
 .services__content-item {
-  height: 160px;
+  height: 90px;
   width: 300px;
 
-  margin: 0 40px;
+  margin: 20px 40px;
+}
+
+.marketing__item,
+.e-commerce__item,
+.web-design__item,
+.web-devolopment__item {
+  border-bottom: 1px solid gray;
 }
 
 /*.services__content-item::before {
   background-image: url(img/services/img.svg);
 }*/
 
-.services__conent-line {
+
+.show__services-element {
+  padding-top: 0px;
+  visibility: visible;
+
+  transition: 1.5s;
+}
+
+.deactive {
+  visibility: hidden;
+
+  /*margin-bottom: 60px;*/
+  padding-top: 60px;
+}
+
+.services__content-line {
   display: inline-flex;
   flex-direction: row;
   align-self: center;
