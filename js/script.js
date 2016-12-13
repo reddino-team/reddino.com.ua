@@ -39,7 +39,7 @@
     });
 })(jQuery);
 
- 
+
 $(document).ready(function(){
     $(".top-header__menu").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
@@ -52,7 +52,48 @@ $(document).ready(function(){
     });
 });
 
+/*Скрипт для появления блока услуг*/
+$( function() {
+  // $('.services-title').removeClass('deactive');
+  // $('.services-title').addClass('show__services-element');
+  $(window).scroll(function () {
+    var bo = $('body').scrollTop();
+    // $('.services-title').text(bo
+    if (bo) {
+      var titleInWindow = inWindow('.services-title');
+      titleInWindow.removeClass('deactive');
+      titleInWindow.addClass('show__services-element');
+      // $('.services-title').removeClass('deactive');
+      // $('.services-title').addClass('show__services-element');
+      var boxesInWindow = inWindow('.services__content-line');
+      boxesInWindow.removeClass('deactive');
+      boxesInWindow.addClass('show__services-element');
+    } else if (bo > 2) {
 
+    }
+  });
+
+});
+
+// функция, которая по заданному селектору
+// найдет соответствующие ему элементы, которые
+// при этом попадают в видимую область окна
+function inWindow(s){
+  var scrollTop = $(window).scrollTop();
+  var windowHeight = $(window).height();
+  var currentEls = $(s);
+  var result = [];
+  currentEls.each(function(){
+    var el = $(this);
+    var offset = el.offset();
+    if(scrollTop <= offset.top && (el.height() + offset.top) < (scrollTop + windowHeight))
+      result.push(this);
+  });
+  return $(result);
+}
+// сделаем фон этих элементов красным
+
+/*Конец скрипта для появления блока услуг*/
 function openFeedback() {
 	document.getElementById('feedback').style.display = 'block';
 }
@@ -63,8 +104,3 @@ function closeFeedback() {
 
 document.getElementById('feedback__button').addEventListener('click', openFeedback);
 document.getElementById('close-window').addEventListener('click', closeFeedback);
-
-
-
-
-
