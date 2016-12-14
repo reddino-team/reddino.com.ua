@@ -63,8 +63,6 @@ $( function() {
       var titleInWindow = inWindow('.services-title');
       titleInWindow.removeClass('deactive');
       titleInWindow.addClass('show__services-element');
-      // $('.services-title').removeClass('deactive');
-      // $('.services-title').addClass('show__services-element');
       var boxesInWindow = inWindow('.services__content-line');
       boxesInWindow.removeClass('deactive');
       boxesInWindow.addClass('show__services-element');

@@ -163,7 +163,7 @@ body {
   height: 90px;
   width: 300px;
 
-  margin: 20px 40px;
+  margin-top: 20px;
 }
 
 .marketing__item,
@@ -173,6 +173,11 @@ body {
   border-bottom: 1px solid gray;
 }
 
+.vertical_line {
+  height: 111px;
+  width: 1px;
+  background: gray;
+}
 /*.services__content-item::before {
   background-image: url(img/services/img.svg);
 }*/
@@ -182,6 +187,7 @@ body {
   padding-top: 0px;
   visibility: visible;
 
+  opacity: 1;
   transition: 1.5s;
 }
 
@@ -189,7 +195,8 @@ body {
   visibility: hidden;
 
   /*margin-bottom: 60px;*/
-  padding-top: 60px;
+  opacity: 0;
+  padding-top: 120px;
 }
 
 .services__content-line {
@@ -1471,7 +1478,7 @@ font-family: Helvetica;
     padding: 20px 0;
     text-align: center;
     display: none;
-    overflow-y: auto; 
+    overflow-y: auto;
     background: rgba(36, 35, 33, 0.8);
     position: fixed;
     top: 0;
