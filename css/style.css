@@ -83,7 +83,7 @@ body {
     font-weight: bold;
 }
 
-.menu__item:hover {
+.menu__item:hover, .menu__item-active {
     color: #ef0111;
 }
 
