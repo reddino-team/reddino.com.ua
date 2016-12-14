@@ -58,16 +58,24 @@ $( function() {
   // $('.services-title').addClass('show__services-element');
   $(window).scroll(function () {
     var bo = $('body').scrollTop();
+    console.log(bo);
     // $('.services-title').text(bo
-    if (bo) {
+    if (bo && bo > 120 && bo < 1000) {
       var titleInWindow = inWindow('.services-title');
       titleInWindow.removeClass('deactive');
       titleInWindow.addClass('show__services-element');
       var boxesInWindow = inWindow('.services__content-line');
       boxesInWindow.removeClass('deactive');
       boxesInWindow.addClass('show__services-element');
-    } else if (bo > 2) {
-
+    }
+    else if (bo > 1000 || bo < 120) {
+      var titleInWindow = inWindow('.services-title');
+      titleInWindow.addClass('deactive');
+      titleInWindow.removeClass('show__services-element');
+      var boxesInWindow = inWindow('.services__content-line');
+      boxesInWindow.addClass('deactive');
+      boxesInWindow.removeClass('show__services-element');
+      console.log('popopo');
     }
   });
 
