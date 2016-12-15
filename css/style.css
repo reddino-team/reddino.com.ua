@@ -20,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Helvetica, Tahoma, Arial, sans-serif;
-    background: #ede7e7;
+    background: #fff;
 }
 
 .clearfix:after {
@@ -41,7 +41,7 @@ body {
     width: 100%;
     position: relative;
     height: 650px;
-    background: url('../img/header/main.jpg') 100% 100% no-repeat;
+    background: url('../img/header/GProxpt.jpg') 100% 100% no-repeat;
     background-size: cover;
 }
 
@@ -106,6 +106,8 @@ body {
 .tagline__reddino {
     font-family: 'Abeatbykai';
     color: #ef0111;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
 .tagline__web {
@@ -114,6 +116,7 @@ body {
     text-align: center;
 }
 
+<<<<<<< HEAD
 /*<=========БЛОК УСЛУГИ==========>*/
 
 
@@ -190,6 +193,106 @@ body {
 }
 
 /*<=========КОНЕЦ БЛОКА УСЛУГИ=========>*/
+=======
+/*<=========БЛОК УСЛУГИ==========>*/
+.services__idea {
+  height: 150px;
+  display: flex;
+  color: #fff;
+
+}
+.top-services {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #C41735;
+}
+.top-services h3 {
+  font-family: 'Abeatbykai';
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px 0;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+}
+.top-services p {
+  text-align: center;
+}
+.design__02 {
+  background: #E41B3F;
+}
+.develop__03 {
+  background: #E62B4C;
+}
+.production__04 {
+  background: #E73C5A;
+}
+.services {
+    color: #3f373c;
+    text-align: center;
+    position: relative;
+    /*background: url('../img/header/Ukmj7b.jpg') 100% 100% no-repeat;*/
+    background-size: cover;
+}
+
+.services-title {
+    margin: 24px auto;
+    padding-top: 60px;
+}
+
+.services-title > h2 {
+    font-size: 48px;
+}
+
+.services__content {
+  display: flex;
+  /*justify-content: center;*/
+  flex-direction: column;
+}
+
+.services__content-item {
+  height: 90px;
+  width: 300px;
+
+  margin: 20px 40px;
+}
+
+.marketing__item,
+.e-commerce__item,
+.web-design__item,
+.web-devolopment__item {
+  border-bottom: 1px solid gray;
+}
+
+.show__services-element {
+  padding-top: 0px;
+  visibility: visible;
+
+  transition: 1.5s;
+}
+
+.deactive {
+  visibility: hidden;
+
+  /*margin-bottom: 60px;*/
+  padding-top: 60px;
+}
+
+.services__content-line {
+  display: inline-flex;
+  flex-direction: row;
+  align-self: center;
+
+  text-align: center;
+}
+
+.services__item-title {
+  font-weight: bold;
+}
+
+/*<=========КОНЕЦ БЛОКА УСЛУГИ=========>*/
+>>>>>>> master
 
 .techno__serv {
     margin: 3em 1em;
@@ -790,4 +893,8 @@ h1 {
     .social-links {
         padding: 40px 0;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master
