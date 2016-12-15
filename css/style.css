@@ -41,7 +41,7 @@ body {
     width: 100%;
     position: relative;
     height: 650px;
-    background: url('../img/header/slide_1.jpg') 100% 100% no-repeat;
+    background: url('../img/header/GProxpt.jpg') 100% 100% no-repeat;
     background-size: cover;
 }
 
@@ -115,8 +115,30 @@ body {
 }
 
 /*<=========БЛОК УСЛУГИ==========>*/
+.services__idea {
+  height: 150px;
+  display: flex;
+  color: #fff;
 
-
+}
+.top-services {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Abeatbykai';
+  justify-content: center;
+  align-items: center;
+  background: #C41735;
+}
+.design__02 {
+  background: #E41B3F;
+}
+.develop__03 {
+  background: #E62B4C;
+}
+.production__04 {
+  background: #E73C5A;
+}
 .services {
     color: #3f373c;
     text-align: center;
