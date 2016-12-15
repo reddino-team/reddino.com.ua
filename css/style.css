@@ -83,7 +83,7 @@ body {
     font-weight: bold;
 }
 
-.menu__item:hover {
+.menu__item:hover, .menu__item-active {
     color: #ef0111;
 }
 
@@ -145,10 +145,10 @@ body {
   width: 300px;
 }
 
-.marketing__item,
-.e-commerce__item,
-.web-design__item,
-.web-devolopment__item {
+.marketing-item,
+.e-commerce-item,
+.web-design-item,
+.web-development-item {
   border-bottom: 1px solid gray;
 }
 

@@ -49,8 +49,27 @@ $(document).ready(function(){
         //узнаем высоту от начала страницы до блока на который ссылается якорь
         top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
+        //меняем цвет ссылки в меню
+        $(this).addClass('menu__item-active').siblings().removeClass('menu__item-active');
     });
+
+   $(window).scroll(function(){
+      $topHeaderHeight = $('.top-header').height();
+      //для каждого блока с классом "anchor" выполняем следующее
+      $('.anchor').each(function() {
+          var $scrollTop = $(window).scrollTop(); //определяем величину прокрутки
+          var $anchorOffsetTop = $(this).offset().top; //определяем отступ блока с классом "anchor" от верха страницы
+          var $anchorId = $(this).attr('id'); // получаем id блока с классом "anchor", до которого выполнилась прокрутка
+          
+          if ($scrollTop > $anchorOffsetTop-$topHeaderHeight) {
+              $('.top-header__menu').find('a').removeClass('menu__item-active');
+              $('.top-header__menu').find('a[href="#' + $anchorId + '"]').addClass('menu__item-active');
+          };
+      });
+   });
+
 });
+
 
 /*Скрипт для появления блока услуг*/
 $( function() {
