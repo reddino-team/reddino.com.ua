@@ -116,84 +116,6 @@ body {
     text-align: center;
 }
 
-<<<<<<< HEAD
-/*<=========БЛОК УСЛУГИ==========>*/
-
-
-.services {
-    height: 500px;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.services-title {
-    margin: 24px auto;
-
-    padding-top: 60px;
-}
-
-.services-title > h2 {
-    font-size: 48px;
-}
-
-.services__content {
-  display: flex;
-  /*justify-content: center;*/
-  flex-direction: column;
-}
-
-.services__content-item {
-  height: 110px;
-  width: 300px;
-}
-
-.marketing-item,
-.e-commerce-item,
-.web-design-item,
-.web-development-item {
-  border-bottom: 1px solid gray;
-}
-
-.vertical_line {
-  height: 131px;
-  width: 1px;
-  background: gray;
-}
-
-.show__services-element {
-  padding-top: 0px;
-  visibility: visible;
-
-  opacity: 1;
-  transition: 2.5s;
-}
-
-.deactive {
-  visibility: hidden;
-
-  opacity: 0;
-  padding-top: 240px;
-}
-
-.services__content-line {
-  height: 111px;
-
-  display: inline-flex;
-  flex-direction: row;
-  align-self: center;
-
-  text-align: center;
-
-  padding-top: 20px;
-}
-
-.services__item-title {
-  font-weight: bold;
-}
-
-/*<=========КОНЕЦ БЛОКА УСЛУГИ=========>*/
-=======
 /*<=========БЛОК УСЛУГИ==========>*/
 .services__idea {
   height: 150px;
@@ -292,7 +214,6 @@ body {
 }
 
 /*<=========КОНЕЦ БЛОКА УСЛУГИ=========>*/
->>>>>>> master
 
 .techno__serv {
     margin: 3em 1em;
@@ -578,10 +499,6 @@ body {
     padding: 20px 0;
     text-align: center;
     display: none;
-<<<<<<< HEAD
-    overflow-y: auto;
-=======
->>>>>>> master
     background: rgba(36, 35, 33, 0.8);
     position: fixed;
     top: 0;
@@ -893,8 +810,4 @@ h1 {
     .social-links {
         padding: 40px 0;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> master
