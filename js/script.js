@@ -60,7 +60,7 @@ $(document).ready(function(){
           var $scrollTop = $(window).scrollTop(); //определяем величину прокрутки
           var $anchorOffsetTop = $(this).offset().top; //определяем отступ блока с классом "anchor" от верха страницы
           var $anchorId = $(this).attr('id'); // получаем id блока с классом "anchor", до которого выполнилась прокрутка
-          
+
           if ($scrollTop > $anchorOffsetTop-$topHeaderHeight) {
               $('.top-header__menu').find('a').removeClass('menu__item-active');
               $('.top-header__menu').find('a[href="#' + $anchorId + '"]').addClass('menu__item-active');
@@ -79,23 +79,42 @@ $( function() {
     var bo = $('body').scrollTop();
     console.log(bo);
     // $('.services-title').text(bo
-    if (bo && bo > 120 && bo < 1000) {
+    // if (bo && bo > 120 && bo < 1000) {
+    if (bo) {
       var titleInWindow = inWindow('.services-title');
       titleInWindow.removeClass('deactive');
       titleInWindow.addClass('show__services-element');
-      var boxesInWindow = inWindow('.services__content-line');
-      boxesInWindow.removeClass('deactive');
-      boxesInWindow.addClass('show__services-element');
+      var itemMarketingInWindow = inWindow('.marketing-item')
+      itemMarketingInWindow.removeClass('deactive')
+      var itemWebDesignInWindow = inWindow('.web-design-item')
+      itemWebDesignInWindow.removeClass('deactive')
+      var itemECommerceInWindow = inWindow('.e-commerce-item')
+      itemECommerceInWindow.removeClass('deactive')
+      var itemWebDevelopmentInWindow = inWindow('.web-development-item')
+      itemWebDevelopmentInWindow.removeClass('deactive')
+      var itemFreeSupportInWindow = inWindow('.free-support-item')
+      itemFreeSupportInWindow.removeClass('deactive')
+      var itemAppDevelopmentInWindow = inWindow('.app-development-item')
+      itemAppDevelopmentInWindow.removeClass('deactive')
+      // var boxesInWindow1 = inWindow('.services__content-item');
+      // boxesInWindow1.removeClass('deactive');
+      // boxesInWindow1.addClass('show__services-element');
+      // var boxesInWindow2 = inWindow('.services__content-item-1');
+      // boxesInWindow2.removeClass('deactive');
+      // boxesInWindow2.addClass('show__services-element');
     }
-    else if (bo > 1000 || bo < 120) {
-      var titleInWindow = inWindow('.services-title');
-      titleInWindow.addClass('deactive');
-      titleInWindow.removeClass('show__services-element');
-      var boxesInWindow = inWindow('.services__content-line');
-      boxesInWindow.addClass('deactive');
-      boxesInWindow.removeClass('show__services-element');
-      console.log('popopo');
-    }
+    // else if (bo > 1000 || bo < 120) {
+    //   var titleInWindow = inWindow('.services-title');
+    //   titleInWindow.addClass('deactive');
+    //   titleInWindow.removeClass('show__services-element');
+    //   var boxesInWindow1 = inWindow('.services__content-item');
+    //   boxesInWindow1.addClass('deactive');
+    //   // boxesInWindow.removeClass('show__services-element');
+    //   var boxesInWindow2 = inWindow('.services__content-item-1');
+    //   boxesInWindow2.addClass('deactive');
+    //   // boxesInWindow.removeClass('show__services-element');
+    //   console.log('popopo');
+    // }
   });
 
 });
