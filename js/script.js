@@ -73,48 +73,32 @@ $(document).ready(function(){
 
 /*Скрипт для появления блока услуг*/
 $( function() {
-  // $('.services-title').removeClass('deactive');
-  // $('.services-title').addClass('show__services-element');
   $(window).scroll(function () {
     var bo = $('body').scrollTop();
-    console.log(bo);
-    // $('.services-title').text(bo
-    // if (bo && bo > 120 && bo < 1000) {
+
     if (bo) {
-      var titleInWindow = inWindow('.services-title');
-      titleInWindow.removeClass('deactive');
-      titleInWindow.addClass('show__services-element');
-      var itemMarketingInWindow = inWindow('.marketing-item')
-      itemMarketingInWindow.removeClass('deactive')
-      var itemWebDesignInWindow = inWindow('.web-design-item')
-      itemWebDesignInWindow.removeClass('deactive')
-      var itemECommerceInWindow = inWindow('.e-commerce-item')
-      itemECommerceInWindow.removeClass('deactive')
-      var itemWebDevelopmentInWindow = inWindow('.web-development-item')
-      itemWebDevelopmentInWindow.removeClass('deactive')
-      var itemFreeSupportInWindow = inWindow('.free-support-item')
-      itemFreeSupportInWindow.removeClass('deactive')
-      var itemAppDevelopmentInWindow = inWindow('.app-development-item')
-      itemAppDevelopmentInWindow.removeClass('deactive')
-      // var boxesInWindow1 = inWindow('.services__content-item');
-      // boxesInWindow1.removeClass('deactive');
-      // boxesInWindow1.addClass('show__services-element');
-      // var boxesInWindow2 = inWindow('.services__content-item-1');
-      // boxesInWindow2.removeClass('deactive');
-      // boxesInWindow2.addClass('show__services-element');
+      var $titleInWindow = inWindow('.services-title');
+      $titleInWindow.removeClass('deactive');
+      $titleInWindow.addClass('show__services-element');
+
+      var $itemMarketingInWindow = inWindow('.marketing-item')
+      $itemMarketingInWindow.removeClass('deactive')
+
+      var $itemWebDesignInWindow = inWindow('.web-design-item')
+      $itemWebDesignInWindow.removeClass('deactive')
+
+      var $itemECommerceInWindow = inWindow('.e-commerce-item')
+      $itemECommerceInWindow.removeClass('deactive')
+
+      var $itemWebDevelopmentInWindow = inWindow('.web-development-item')
+      $itemWebDevelopmentInWindow.removeClass('deactive')
+
+      var $itemFreeSupportInWindow = inWindow('.free-support-item')
+      $itemFreeSupportInWindow.removeClass('deactive')
+
+      var $itemAppDevelopmentInWindow = inWindow('.app-development-item')
+      $itemAppDevelopmentInWindow.removeClass('deactive')
     }
-    // else if (bo > 1000 || bo < 120) {
-    //   var titleInWindow = inWindow('.services-title');
-    //   titleInWindow.addClass('deactive');
-    //   titleInWindow.removeClass('show__services-element');
-    //   var boxesInWindow1 = inWindow('.services__content-item');
-    //   boxesInWindow1.addClass('deactive');
-    //   // boxesInWindow.removeClass('show__services-element');
-    //   var boxesInWindow2 = inWindow('.services__content-item-1');
-    //   boxesInWindow2.addClass('deactive');
-    //   // boxesInWindow.removeClass('show__services-element');
-    //   console.log('popopo');
-    // }
   });
 
 });
