@@ -41,7 +41,7 @@ body {
     width: 100%;
     position: relative;
     height: 650px;
-    background: url('../img/header/GProxpt.jpg') 100% 100% no-repeat;
+    background: url('../img/header/slide15.jpg') 100% 100% no-repeat;
     background-size: cover;
 }
 
@@ -175,17 +175,26 @@ body {
 }
 
 .services-title > h2 {
-    font-size: 48px;
+    font-size: 230%;
+    text-transform: uppercase;
 }
+
+.services-title > p {
+    font-size: 125%;
+    font-family: MyriadPro;
+    margin-bottom: 5%;
+    font-weight: 800;
+}
+
 .services__content {
   position: relative;
   width: 800px;
-  height: 400px;
+  height: 500px;
   margin: auto;
 }
 
 .services__content-item {
-  height: 100px;
+  height: 150px;
   width: 400px;
 
   position: absolute;
@@ -205,11 +214,11 @@ body {
 }
 
 .web-design-item {
-  top: 40px;
+  top: 35px;
 }
 
 .e-commerce-item {
-  top: 100px;
+  top: 90px;
 }
 
 .web-development-item {
@@ -217,11 +226,11 @@ body {
 }
 
 .free-support-item {
-  top: 200px;
+  top: 235px;
 }
 
 .app-development-item {
-  top: 240px;
+  top: 260px;
 }
 
 .web-development-item,
@@ -230,6 +239,7 @@ body {
 .app-development-item {
   border-top: 1px solid gray;
   padding-top: 10px;
+  margin-top: 50px;
 }
 
 .marketing-item,
@@ -260,6 +270,7 @@ body {
 
 .services__item-title {
   font-weight: bold;
+  margin: 5px 0;
 }
 
 /*<=========КОНЕЦ БЛОКА УСЛУГИ=========>*/
@@ -545,24 +556,27 @@ body {
     height: 100%;
     width: 100%;
     min-width: 400px;
-    padding: 20px 0;
+    padding: 50px 0;
     text-align: center;
     display: none;
-    background: rgba(36, 35, 33, 0.8);
+    background: rgba(36, 35, 33, 0.95);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 60000;
+    overflow-x: auto;
+    overflow-y: auto; 
 }
 
 .feedback__form {
     width: 50%;
+    max-width: 800px;
     margin: auto;
-    padding-top: 20px;
+    padding: 100px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: rgba(54, 54, 54, 1);
+    /* background: rgba(54, 54, 54, 1);
     background: -moz-linear-gradient(left, rgba(54, 54, 54, 1) 0%, rgba(102, 110, 112, 1) 50%, rgba(54, 54, 54, 1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(54, 54, 54, 1)), color-stop(50%, rgba(102, 110, 112, 1)), color-stop(100%, rgba(54, 54, 54, 1)));
     background: -webkit-linear-gradient(left, rgba(54, 54, 54, 1) 0%, rgba(102, 110, 112, 1) 50%, rgba(54, 54, 54, 1) 100%);
@@ -572,7 +586,11 @@ body {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#363636', endColorstr='#363636', GradientType=1);
     -webkit-box-shadow: 0px 0px 10px 2px rgba(20, 18, 20, 1);
     -moz-box-shadow: 0px 0px 10px 2px rgba(20, 18, 20, 1);
-    box-shadow: 0px 0px 10px 2px rgba(20, 18, 20, 1);
+    box-shadow: 0px 0px 10px 2px rgba(20, 18, 20, 1); */
+}
+
+.feedback__form label {
+    background: rgba(36, 35, 33, 0.1);
 }
 
 .feedback__close {
@@ -642,7 +660,8 @@ body {
 }
 
 #submitbtn {
-    width: 85%;
+    width: 80%;
+    min-width: 200px;
     height: 40px;
     margin: 20px auto;
     background: rgb(239, 1, 17);
