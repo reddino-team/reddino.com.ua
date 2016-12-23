@@ -125,9 +125,8 @@ body {
 }
 .top-services {
   width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: inline-block;
+  text-align: center;
   background: #C41735;
 }
 .top-services h3 {
@@ -256,7 +255,6 @@ body {
 
 .deactive {
   visibility: hidden;
-
   padding-top: 600px;
   opacity: 0;
 }
@@ -570,6 +568,7 @@ body {
 
 .feedback__form {
     width: 50%;
+    position: relative;
     max-width: 800px;
     margin: auto;
     padding: 100px;
@@ -594,12 +593,13 @@ body {
 }
 
 .feedback__close {
-    height: 0px;
     margin-right: 20px;
     text-align: right;
     font-size: 25px;
     color: #fff;
     cursor: pointer;
+    position: absolute;
+    right: 10%;
 }
 
 #name, #email, #tel, #message {
@@ -685,7 +685,6 @@ body {
 .footer {
     background: url("../img/lets-get-social.jpg");
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: multiply;
     color: #fff;
 }
