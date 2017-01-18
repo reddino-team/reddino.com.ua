@@ -41,7 +41,7 @@ body {
     width: 100%;
     position: relative;
     height: 650px;
-    background: url('../img/header/slide15.jpg') 100% 100% no-repeat;
+    background: url('../img/header/1 (1).jpg') 100% 100% no-repeat;
     background-size: cover;
 }
 
@@ -563,7 +563,7 @@ body {
     left: 0;
     z-index: 60000;
     overflow-x: auto;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 
 .feedback__form {
