@@ -70,58 +70,6 @@ $(document).ready(function(){
 
 });
 
-
-/*Скрипт для появления блока услуг*/
-$( function() {
-  $(window).scroll(function () {
-    var bo = $('body').scrollTop();
-
-    if (bo) {
-      var $titleInWindow = inWindow('.services-title');
-      $titleInWindow.removeClass('deactive');
-      $titleInWindow.addClass('show__services-element');
-
-      var $itemMarketingInWindow = inWindow('.marketing-item')
-      $itemMarketingInWindow.removeClass('deactive')
-
-      var $itemWebDesignInWindow = inWindow('.web-design-item')
-      $itemWebDesignInWindow.removeClass('deactive')
-
-      var $itemECommerceInWindow = inWindow('.e-commerce-item')
-      $itemECommerceInWindow.removeClass('deactive')
-
-      var $itemWebDevelopmentInWindow = inWindow('.web-development-item')
-      $itemWebDevelopmentInWindow.removeClass('deactive')
-
-      var $itemFreeSupportInWindow = inWindow('.free-support-item')
-      $itemFreeSupportInWindow.removeClass('deactive')
-
-      var $itemAppDevelopmentInWindow = inWindow('.app-development-item')
-      $itemAppDevelopmentInWindow.removeClass('deactive')
-    }
-  });
-
-});
-
-// функция, которая по заданному селектору
-// найдет соответствующие ему элементы, которые
-// при этом попадают в видимую область окна
-function inWindow(s){
-  var scrollTop = $(window).scrollTop();
-  var windowHeight = $(window).height();
-  var currentEls = $(s);
-  var result = [];
-  currentEls.each(function(){
-    var el = $(this);
-    var offset = el.offset();
-    if(scrollTop <= offset.top && (el.height() + offset.top) < (scrollTop + windowHeight))
-      result.push(this);
-  });
-  return $(result);
-}
-// сделаем фон этих элементов красным
-
-/*Конец скрипта для появления блока услуг*/
 function openFeedback() {
 	document.getElementById('feedback').style.display = 'block';
 }
