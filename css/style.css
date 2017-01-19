@@ -300,6 +300,8 @@ body {
 .about {
     background: url(../img/bg-image.jpg) no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+
 }
 
 .about-background {
