@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" charset="utf-8"></script>
     <script src="js/masonry.pkgd.js"></script>
     <script src="js/imagesloaded.pkgd.js"></script>
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
     <script src="js/fm.revealator.jquery.js"></script>
     <script src="js/jquery.jcarousel.js"></script>
     <!--[if lte IE 9]>
@@ -393,64 +394,91 @@
         </div>
     </section>
 
-    <section class="contacts anchor" id="contacts">
-        <div class="feedback" id="feedback_section">
-            <div class="container">
-                <div class="feedback__box">
-                    <h2>Обратная связь</h2>
-                    <p>Чтобы получить консультацию у специалистов команды reddino, кликните по кнопке внизу.</p>
-                    <div id="feedback__button">Связаться с reddino</div>
+<!--     <section class="contacts anchor" id="contacts">
+    <div class="feedback" id="feedback_section">
+        <div class="container">
+            <div class="feedback__box">
+                <h2>Обратная связь</h2>
+                <p>Чтобы получить консультацию у специалистов команды reddino, кликните по кнопке внизу.</p>
+                <div id="feedback__button">Связаться с reddino</div>
 
-                </div>
-                <div class="feedback__mail" id="feedback">
-                    <form class="feedback__form" action="#">
-                        <div class="feedback__close"><i class="fa fa-times" aria-hidden="true" id="close-window"></i></div>
-                        <h1 class="feedback__header">Напишите нам</h1>
-                        <p class="feedback__paragraph">Оставьте свои контактные данные и наш специалист свяжется с Вами в течение 30 минут</p>
-                        <label for="name"><input type="text" name="name" id="name" placeholder="Ваше имя *" required></label>
-                        <label for="tel"><input type="tel" name="tel" id="tel" placeholder="Телефон в формате +380ххххххххх *"></label>
-                        <label for="message"><textarea name="message" id="message"  placeholder="Ваше сообщение" required></textarea></label>
-                        <input type="submit" id="submitbtn" name="submitbtn" value="Отправить сообщение">
-                    </form>
-                </div>
+            </div>
+            <div class="feedback__mail" id="feedback">
+                <form class="feedback__form" action="#">
+                    <div class="feedback__close"><i class="fa fa-times" aria-hidden="true" id="close-window"></i></div>
+                    <h1 class="feedback__header">Напишите нам</h1>
+                    <p class="feedback__paragraph">Оставьте свои контактные данные и наш специалист свяжется с Вами в течение 30 минут</p>
+                    <label for="name"><input type="text" name="name" id="name" placeholder="Ваше имя *" required></label>
+                    <label for="tel"><input type="tel" name="tel" id="tel" placeholder="Телефон в формате +380ххххххххх *"></label>
+                    <label for="message"><textarea name="message" id="message"  placeholder="Ваше сообщение" required></textarea></label>
+                    <input type="submit" id="submitbtn" name="submitbtn" value="Отправить сообщение">
+                </form>
             </div>
         </div>
+    </div>
+</section> -->
+    <footer class="footer">
+        <div class="social-links clearfix container">
 
-        <footer class="footer">
-            <div class="social-links clearfix container">
+            <div class="social">
+                <p>Не стесняйся, давай общаться</p>
+                <a href="https://www.facebook.com/groups/709891805825208/?fref=ts" target="_blank">
+                    <i class="fa fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://vk.com/reddino" target="_blank">
+                    <i class="fa fa-vk fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/webreddino/" target="_blank">
+                    <i class="fa fa-instagram fa-2x"></i>
+                </a>
 
-                <div class="social">
-                    <p>Не стесняйся, давай общаться</p>
-                    <a href="https://www.facebook.com/groups/709891805825208/?fref=ts" target="_blank">
-                        <i class="fa fa-facebook fa-2x"></i>
-                    </a>
-                    <a href="https://vk.com/reddino" target="_blank">
-                        <i class="fa fa-vk fa-2x"></i>
-                    </a>
-                    <a href="https://www.instagram.com/webreddino/" target="_blank">
-                        <i class="fa fa-instagram fa-2x"></i>
-                    </a>
-                </div>
+                <p>Контакты:</p>
+                <br>
 
-                <div class="text-box">
-                    <p>Контакты:</p>
-                    <br>
-                    <p>49000, Украина, г. Днепр (Днепропетровск)
-                        <br> ул. Центральная, 1а, офис 1</p>
-                    <br>
-                    <p>Телефоны:</p>
-                    <p>056 777 77 77</p>
-                    <p>050 555 55 55</p>
-                    <br>
-                    <p>E-mail: web.red.dino@gmail.com</p>
-                </div>
-
+                <p>Телефоны:</p>
+                <p>056 777 77 77</p>
+                <p>050 555 55 55</p>
+                <br>
+                <p>E-mail: web.red.dino@gmail.com</p>
             </div>
-            <div class="copyright">
-                <p>© Copyright 2016 | Творческое агенство "Reddino"</p>
+
+           <!--  <div class="text-box">
+               <p>Контакты:</p>
+               <br>
+           
+               <p>Телефоны:</p>
+               <p>056 777 77 77</p>
+               <p>050 555 55 55</p>
+               <br>
+               <p>E-mail: web.red.dino@gmail.com</p>
+           </div> -->
+            
+             <div class="feedback">
+                <form class="feedback__form " action="#">
+                    <label for="name"><input type="text" name="name" id="name" placeholder="Ваше имя *" required></label>
+                    <label for="tel"><input type="tel" name="tel" id="tel" placeholder="Телефон в формате +380ххххххххх *"></label>
+                    <label for="message"><textarea name="message" id="message"  placeholder="Ваше сообщение"></textarea></label>
+                    <input type="submit" id="submitbtn" name="submitbtn" value="Отправить сообщение">
+                </form>
+
+                <!-- <form class="feedback__form" action="#">
+                    <div class="feedback__close"><i class="fa fa-times" aria-hidden="true" id="close-window"></i></div>
+                    <h1 class="feedback__header">Напишите нам</h1>
+                    <p class="feedback__paragraph">Оставьте свои контактные данные и наш специалист свяжется с Вами в течение 30 минут</p>
+                    <label for="name"><input type="text" name="name" id="name" placeholder="Ваше имя *" required></label>
+                    <label for="tel"><input type="tel" name="tel" id="tel" placeholder="Телефон в формате +380ххххххххх *"></label>
+                    <label for="message"><textarea name="message" id="message"  placeholder="Ваше сообщение" required></textarea></label>
+                    <input type="submit" id="submitbtn" name="submitbtn" value="Отправить сообщение">
+                </form> -->
             </div>
-        </footer>
-    </section>
+
+
+        </div>
+        <div class="copyright">
+            <p>© Copyright 2016 | Творческое агенство "Reddino"</p>
+        </div>
+    </footer>
+    
     <script type="text/javascript" src="js/script.js"></script>
     <script src="js/services-script.js" charset="utf-8"></script>
 </body>
