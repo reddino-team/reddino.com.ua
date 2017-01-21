@@ -1,44 +1,67 @@
 /*Скрипт для появления блока услуг*/
 'use script';
 $(function() {
-  $(window).scroll(function () {
-    var $body = $(window).scrollTop()
+  //СКРИПТ ДЛЯ НОВОГО БЛОКА УСЛУГ
+$(function () {
+  console.log('start');
 
-    if ($body) {
-      var $titleInWindow = inWindow('.services-title');
-      $titleInWindow.removeClass('deactive').addClass('show__services-element');
+var fooReveal = {
+  origin: 'bottom',
+  delay    : 500,
+  distance : '200px',
+  easing   : 'ease-in-out',
+  // rotate   : { z: 10 },
+  scale    : 1.1
+};
+var fooReveal1 = {
+  origin: 'bottom',
+  delay    : 600,
+  distance : '200px',
+  easing   : 'ease-in-out',
+  // rotate   : { z: 10 },
+  scale    : 1.1
+};
+var fooRev = {
+  origin: 'bottom',
+  delay    : 750,
+  distance : '200px',
+  easing   : 'ease-in-out',
+  // rotate   : { z: 10 },
+  scale    : 1.1
+};
+var fooRev1 = {
+  origin: 'bottom',
+  delay    : 850,
+  distance : '200px',
+  easing   : 'ease-in-out',
+  // rotate   : { z: 10 },
+  scale    : 1.1
+};
+var fooRev3 = {
+  origin: 'bottom',
+  delay    : 900,
+  distance : '200px',
+  easing   : 'ease-in-out',
+  // rotate   : { z: 10 },
+  scale    : 1.1
+};
+var fooRev31 = {
+  origin: 'bottom',
+  delay    : 1000,
+  distance : '200px',
+  easing   : 'ease-in-out',
+  // rotate   : { z: 10 },
+  scale    : 1.1
+};
+window.sr = ScrollReveal();
+sr.reveal('.foo', fooReveal);
+sr.reveal('.foo_1', fooReveal1);
+sr.reveal('.foo_2', fooRev);
+sr.reveal('.foo_3', fooRev1);
+sr.reveal('.foo_4', fooRev3);
+sr.reveal('.foo_5', fooRev31);
+})
 
-      var $itemMarketingInWindow = inWindow('.marketing-item').removeClass('deactive')
-
-      var $itemWebDesignInWindow = inWindow('.web-design-item').removeClass('deactive')
-
-      var $itemECommerceInWindow = inWindow('.e-commerce-item').removeClass('deactive')
-
-      var $itemWebDevelopmentInWindow = inWindow('.web-development-item').removeClass('deactive')
-
-      var $itemFreeSupportInWindow = inWindow('.free-support-item').removeClass('deactive')
-
-      var $itemAppDevelopmentInWindow = inWindow('.app-development-item').removeClass('deactive')
-    }
-  });
-
-  // функция, которая по заданному селектору
-  // найдет соответствующие ему элементы, которые
-  // при этом попадают в видимую область окна
-  function inWindow(s) {
-
-    var scrollTop = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    var currentEls = $(s);
-    var result = [];
-
-    currentEls.each(function(){
-      var el = $(this);
-      var offset = el.offset();
-      if (scrollTop <= offset.top && (el.height() + offset.top) < (scrollTop + windowHeight))
-        result.push(this);
-    });
-    return $(result);
-  }
+//КОНЕЦ НОВОГО БЛОКА УСЛУГ
 });
 /*Конец скрипта для появления блока услуг*/

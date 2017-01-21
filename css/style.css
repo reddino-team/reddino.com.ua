@@ -185,8 +185,60 @@ body {
 
   /*-------End "whatWeDo"------*/
 
+  /*CSS ДЛЯ НОВОГО БЛОКА УСЛУГ*/
+#services {
+    display: block;
+    padding: 30px;
+    background: url('../img/services/dark_brick_wall.png') repeat;
+  }
+#services .conteiner__servieces {
+    display: inline-block;
+    width: 100%;
+    height: inherit;
 }
-.services {
+#services .row-services {
+      text-align: center;
+      font-size: 120%;
+}
+#services li {
+    visibility: visible;
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    transition: all 0.3s ease 0s, transform 0.85s ease-in-out 0s, opacity 0.85s ease-in-out 0s;
+    border-bottom: 1px dashed #fff;
+}
+.row-services {
+    color: #fff;
+    text-align: center;
+}
+.row-services h2  {
+    font-weight: bold;
+
+}
+#fooContainer p {
+    text-indent: 10%;
+    color: #fff;
+    text-align: justify;
+    font-size: 120%;
+    padding: 1% 4%;
+}
+#fooContainer h4 {
+    color: #fff;
+    text-align: center;
+    font-size: 150%;
+    font-weight: normal;
+}
+#fooContainer {
+    padding: 15px 10px ;
+}
+#fooContainer:hover {
+      background-color: #e62b4c;
+}
+.services-list .sr-delay-1, .services-list .sr-delay-3, .services-list .sr-delay-5 {
+    border-left: 1px dashed #fff;
+}
+  /*КОНЕЦ НОВОГО БЛОКА УСЛУГ*/
+/*.services {
     color: #3f373c;
     text-align: center;
     position: relative;
@@ -296,7 +348,7 @@ body {
 .services__item-title {
   font-weight: bold;
   margin: 5px 0;
-}
+}*/
 
 /*<=========КОНЕЦ БЛОКА УСЛУГИ=========>*/
 
