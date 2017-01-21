@@ -81,19 +81,6 @@ function closeFeedback() {
 document.getElementById('feedback__button').addEventListener('click', openFeedback);
 document.getElementById('close-window').addEventListener('click', closeFeedback);*/
 
-
-var $grid = $('.work__grid').imagesLoaded( function() {
-   $grid.masonry({
-    itemSelector: '.work__grid-item',
-    percentPosition: true,
-    columnWidth: '.work__grid-sizer'
-  }); 
-});
-
-
-
-
-
 $(function () {
 
 var feedbackReveal = {
