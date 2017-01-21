@@ -41,7 +41,7 @@ body {
     width: 100%;
     position: relative;
     height: 650px;
-    background: url('../img/header/1 (1).jpg') 100% 100% no-repeat;
+    background: url('../img/header/header-bg.jpg') 100% 100% no-repeat;
     background-size: cover;
 }
 
@@ -1122,7 +1122,7 @@ h1 {
 }
 
 .team {
-    padding: 1% 0;
+    padding: 2% 0;
     background: url(../img/work/wall.png);
 }
 
@@ -1175,3 +1175,19 @@ h1 {
     -o-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;   
 }
+
+.parallax {
+    padding: 15% 25%;
+    margin:0 auto;
+    color: #fff;
+    font-size: 3.5rem;
+    line-height: 5.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: "Raleway", sans-serif;
+    background: url(../img/header/parallax2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
