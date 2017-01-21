@@ -3,8 +3,7 @@
 $(function() {
   //СКРИПТ ДЛЯ НОВОГО БЛОКА УСЛУГ
 $(function () {
-  console.log('start');
-
+  
 var fooReveal = {
   origin: 'bottom',
   delay    : 500,

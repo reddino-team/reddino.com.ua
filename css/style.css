@@ -205,7 +205,7 @@ body {
     transform: translateY(0) scale(1);
     opacity: 1;
     transition: all 0.3s ease 0s, transform 0.85s ease-in-out 0s, opacity 0.85s ease-in-out 0s;
-    border-bottom: 1px dashed #fff;
+    /*border-bottom: 1px dashed #fff;*/
 }
 .row-services {
     color: #fff;
@@ -234,9 +234,9 @@ body {
 #fooContainer:hover {
       background-color: #e62b4c;
 }
-.services-list .sr-delay-1, .services-list .sr-delay-3, .services-list .sr-delay-5 {
+/*.services-list .sr-delay-1, .services-list .sr-delay-3, .services-list .sr-delay-5 {
     border-left: 1px dashed #fff;
-}
+}*/
   /*КОНЕЦ НОВОГО БЛОКА УСЛУГ*/
 /*.services {
     color: #3f373c;
