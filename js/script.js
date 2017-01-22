@@ -68,32 +68,7 @@ $(document).ready(function(){
       });
    });
 
+
+
 });
 
-/*function openFeedback() {
-	document.getElementById('feedback').style.display = 'block';
-}
-
-function closeFeedback() {
-	document.getElementById('feedback').style.display = 'none';
-}
-
-document.getElementById('feedback__button').addEventListener('click', openFeedback);
-document.getElementById('close-window').addEventListener('click', closeFeedback);*/
-
-$(function () {
-
-var feedbackReveal = {
-  origin: 'right',
-  delay    : 1000,
-  distance : '50px',
-  easing   : 'ease-in-out',
-  // rotate   : { z: 10 },
-  scale    : 1.0
-};
-
-
-window.sr = ScrollReveal();
-sr.reveal('.feedback', feedbackReveal);
-
-})

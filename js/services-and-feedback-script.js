@@ -52,6 +52,14 @@ var fooRev31 = {
   // rotate   : { z: 10 },
   scale    : 1.1
 };
+var feedbackReveal = { // для формы обратной связи
+  origin: 'right',
+  delay    : 1000,
+  distance : '50px',
+  easing   : 'ease-in-out',
+  // rotate   : { z: 10 },
+  scale    : 1.0
+};
 window.sr = ScrollReveal();
 sr.reveal('.foo', fooReveal);
 sr.reveal('.foo_1', fooReveal1);
@@ -59,6 +67,7 @@ sr.reveal('.foo_2', fooRev);
 sr.reveal('.foo_3', fooRev1);
 sr.reveal('.foo_4', fooRev3);
 sr.reveal('.foo_5', fooRev31);
+sr.reveal('.feedback', feedbackReveal);
 })
 
 //КОНЕЦ НОВОГО БЛОКА УСЛУГ
