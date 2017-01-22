@@ -1105,6 +1105,64 @@ h1 {
     color: #000;
 }
 
+.work__big-size {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+
+.work__smallest-size {
+        width: 25%;
+        float: left;
+        position: relative;
+    min-height: 1px;
+}
+
+.work__small-size {
+    width: 33.333%;
+    float: left;
+        position: relative;
+    min-height: 1px;
+}
+
+.work__row:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+@media all and (max-width: 768px) {
+    .work__big-size {
+        width: 100%;
+    }
+    .work__small-size,
+    .work__smallest-size {
+        width: 50%;
+    }
+
+    .work__small-size__last {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 437px) {
+    .work__big-size,
+    .work__small-size,
+    .work__smallest-size,
+    .work__small-size__last  {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+
 .team {
     padding: 2% 0;
     background: url(../img/work/wall.png);
