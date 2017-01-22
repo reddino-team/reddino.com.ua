@@ -41,8 +41,9 @@ body {
     width: 100%;
     position: relative;
     height: 650px;
-    background: url('../img/header/header-bg.jpg') 100% 100% no-repeat;
+    background: url('../img/header/bg-team.jpg') no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .top-header {
@@ -188,7 +189,7 @@ body {
   /*CSS ДЛЯ НОВОГО БЛОКА УСЛУГ*/
 #services {
     display: block;
-    padding: 30px;
+    padding-top: 30px;
     background: url('../img/services/dark_brick_wall.png') repeat;
   }
 #services .conteiner__servieces {
@@ -198,7 +199,7 @@ body {
 }
 #services .row-services {
       text-align: center;
-      font-size: 120%;
+      font-size: 119%;
 }
 #services li {
     visibility: visible;
@@ -206,6 +207,10 @@ body {
     opacity: 1;
     transition: all 0.3s ease 0s, transform 0.85s ease-in-out 0s, opacity 0.85s ease-in-out 0s;
     /*border-bottom: 1px dashed #fff;*/
+}
+.row-services__item {
+    max-width: 768px;
+    margin: 0 auto;
 }
 .row-services {
     color: #fff;
@@ -219,13 +224,13 @@ body {
     text-indent: 10%;
     color: #fff;
     text-align: justify;
-    font-size: 120%;
-    padding: 1% 4%;
+    font-size: 119%;
+    padding: 1% 5%;
 }
 #fooContainer h4 {
     color: #fff;
     text-align: center;
-    font-size: 150%;
+    font-size: 130%;
     font-weight: normal;
 }
 #fooContainer {
@@ -377,14 +382,15 @@ body {
 /* ABOUT */
 
 .about {
-    background: url(../img/header/bg-team.jpg) no-repeat;
+    background: url(../img/bg-image.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 
 }
 
 .about-background {
-    background-color: rgba(35, 35, 35, 0.5);
+    background-color: rgba(35, 35, 35, 0.7);
     padding: 50px 0;
 }
 
