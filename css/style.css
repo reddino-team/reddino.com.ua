@@ -584,185 +584,9 @@ body {
 }
 
 
-/* FEEDBACK
-
-.feedback {
-    background: #121212;
-    font-family: Helvetica;
-}
-
-.feedback__box {
-    padding: 50px 0;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.feedback__box h2 {
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.feedback__box p {
-    font-size: 20px;
-    color: #fff;
-}
-
-#feedback__button {
-    width: 250px;
-    display: block;
-    padding: 20px 0;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    margin: 40px auto;
-    text-transform: uppercase;
-    color: #fff;
-    cursor: pointer;
-    -webkit-transition: all .15s linear;
-}
-
-#feedback__button:hover {
-    border: 2px solid rgb(239, 1, 17);
-}
-
-.feedback__header {
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.feedback__paragraph {
-    width: 77%;
-    margin: 20px auto 10px auto;
-    color: #fff;
-    position: relative;
-}
-
-.feedback__mail {
-    height: 100%;
-    width: 100%;
-    min-width: 400px;
-    padding: 50px 0;
-    text-align: center;
-    display: none;
-    background: rgba(36, 35, 33, 0.95);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 60000;
-    overflow-x: auto;
-    overflow-y: auto;
-}
-
-.feedback__form {
-    width: 50%;
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background: rgba(54, 54, 54, 1);
-    background: -moz-linear-gradient(left, rgba(54, 54, 54, 1) 0%, rgba(102, 110, 112, 1) 50%, rgba(54, 54, 54, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(54, 54, 54, 1)), color-stop(50%, rgba(102, 110, 112, 1)), color-stop(100%, rgba(54, 54, 54, 1)));
-    background: -webkit-linear-gradient(left, rgba(54, 54, 54, 1) 0%, rgba(102, 110, 112, 1) 50%, rgba(54, 54, 54, 1) 100%);
-    background: -o-linear-gradient(left, rgba(54, 54, 54, 1) 0%, rgba(102, 110, 112, 1) 50%, rgba(54, 54, 54, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(54, 54, 54, 1) 0%, rgba(102, 110, 112, 1) 50%, rgba(54, 54, 54, 1) 100%);
-    background: linear-gradient(to right, rgba(54, 54, 54, 1) 0%, rgba(102, 110, 112, 1) 50%, rgba(54, 54, 54, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#363636', endColorstr='#363636', GradientType=1);
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(20, 18, 20, 1);
-    -moz-box-shadow: 0px 0px 10px 2px rgba(20, 18, 20, 1);
-    box-shadow: 0px 0px 10px 2px rgba(20, 18, 20, 1);
-}
-
-.feedback__form label {
-    background: rgba(36, 35, 33, 0.1);
-}
-
-.feedback__close {
-    margin-right: 20px;
-    text-align: right;
-    font-size: 25px;
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
-    right: 10%;
-}
-
-#name, #email, #tel, #message {
-    width: 80%;
-    height: 40px;
-    margin-top: 20px;
-    background: #fff;
-    padding-left: 10px;
-    border: 1px solid #737373;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-#message {
-    height: 200px;
-    padding-top: 0.5em;
-}
-
-#name:focus, #email:focus, #tel:focus, #message:focus {
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-::-webkit-input-placeholder {
-    color: rgba(54, 54, 54, 0.3);
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    font-family: Helvetica;
-}
-
-::-moz-placeholder {
-    color: rgba(54, 54, 54, 0.3);
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    font-family: Helvetica;
-}
+/* FEEDBACK */
 
 
-Firefox 19+
-
-:-moz-placeholder {
-    color: rgba(54, 54, 54, 0.3);
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    font-family: Helvetica;
-}
-
-
-Firefox 18-
-
-:-ms-input-placeholder {
-    color: rgba(54, 54, 54, 0.3);
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    font-family: Helvetica;
-}
-
-::placeholder {
-    color: rgba(54, 54, 54, 0.3);
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    font-family: Helvetica;
-}
-
-#submitbtn {
-    width: 80%;
-    min-width: 200px;
-    height: 40px;
-    margin: 20px auto;
-    background: rgb(239, 1, 17);
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#submitbtn:active {
-    background: rgba(36, 35, 33, 0.8);
-}
- */
 
 .feedback {
     float: left;
@@ -775,7 +599,16 @@ Firefox 18-
 
 .feedback__form label {
     display: block;
+    font-weight: 400;
+}
 
+label.label__top {
+    display: inline-block;
+    width: 48%;
+}
+
+label.label__top-left {
+    margin-left: 3%;
 }
 
 
@@ -792,7 +625,7 @@ Firefox 18-
 }
 
 #message {
-    height: 200px;
+    height: 180px;
     padding-top: 0.5em;
     resize: none;
 }
@@ -873,7 +706,7 @@ Firefox 18-
 }
 
 .social-links {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .social, .text-box, .feedback {

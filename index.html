@@ -587,8 +587,10 @@
 
              <div class="feedback">
                 <form class="feedback__form " action="#">
-                    <label for="name"><input type="text" name="name" id="name" placeholder="Ваше имя *" required></label>
-                    <label for="tel"><input type="tel" name="tel" id="tel" placeholder="Телефон в формате +380ххххххххх *"></label>
+                    <div> 
+                      <label for="name" class="label__top"><input type="text" name="name" id="name" placeholder="Ваше имя *" required></label>
+                      <label for="tel" class="label__top label__top-left"><input type="tel" name="tel" id="tel" placeholder="Телефон *"></label>
+                    </div>
                     <label for="message"><textarea name="message" id="message"  placeholder="Ваше сообщение"></textarea></label>
                     <input type="submit" id="submitbtn" name="submitbtn" value="Отправить сообщение">
                 </form>
