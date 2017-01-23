@@ -2,25 +2,28 @@
 <html lang="ru">
 <head>
     <title>Что такое SEO?</title>
-    <meta charset="utf-8">
+     <meta charset="utf-8">
     <link rel="icon" href="../img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <!-- <link rel="stylesheet" href="../css/fm.revealator.jquery.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" charset="utf-8"></script>
 
 </head>
 <body>
     <header class="header" style="background: none; height: auto;"> <!-- отключаем фон в Header-->
         <section class="top-header">
             <div class="container top-header__container clearfix">
-                <a href="/" class="logo">reddino</a>
+                <a href="../index.html" class="logo">reddino</a>
                 <nav class="menu top-header__menu"> <!-- ВСТАВИТЬ ССЫЛКИ -->
-                    <a href="../index.html#top" class="menu__item">Главная</a>
+                    <a href="../index.html#top" class="menu__item menu__item-active">Главная</a>
                     <a href="../index.html#services" class="menu__item">Услуги</a>
-                    <a href="../index.html" class="menu__item">Наши работы</a>
                     <a href="../index.html#about" class="menu__item">О нас</a>
+                    <a href="../index.html#work" class="menu__item">Наши работы</a>
                     <a href="../index.html#blog" class="menu__item">Блог</a>
-                    <a href="../index.html#feedback_section" class="menu__item">Контакты</a>
+                    <a href="../index.html#contacts" class="menu__item">Контакты</a>
                 </nav>
             </div>
         </section>
@@ -107,36 +110,24 @@
 
         </main>
 
-        <section class="feedback" id="feedback_section">
-        <div class="container feedback__container">
-            <div class="feedback__box">
-                <h2>Обратная связь</h2>
-                <p>Чтобы получить консультацию у специалистов команды reddino, кликните по кнопке внизу.</p>
-                <div id="feedback__button">Связаться с reddino</div>
+        <footer class="footer">
 
-            </div>
-            <div class="feedback__mail" id="feedback">
-                <form class="feedback__form" action="#">
-                    <div class="feedback__close"><i class="fa fa-times" aria-hidden="true" id="close-window"></i></div>
-                    <h1 class="feedback__header">Напишите нам</h1>
-                    <p class="feedback__paragraph">Оставьте свои контактные данные и наш специалист свяжется с Вами в течение 30 минут</p>
-                    <label for="name"><input type="text" name="name" id="name" placeholder="Ваше имя *" required></label>
-                    <label for="email"><input type="email" name="email" id="email" placeholder="Ваш E-mail *" required></label>
-                    <label for="tel"><input type="tel" name="tel" id="tel" placeholder="Телефон в формате +380ххххххххх"></label>
-                    <label for="message"><textarea name="message" id="message"  placeholder="Ваше сообщение *" required></textarea></label>
-                    <input type="submit" id="submitbtn" name="submitbtn" value="Отправить сообщение">
-                </form>
-            </div>
-        </div>
-    </section>
-
-
-
-    <footer class="footer">
-        <div class="social-links clearfix container">
-
-                <div class="social">
-                    <p>Не стесняйся, давай общаться</p>
+        
+        <div class="contacts clearfix container anchor" id="contacts">
+            <h2>Свяжитесь с нами</h2>
+            <div class="contacts-field">
+                <div>
+                    <i class="fa fa-envelope-o fa-2x"></i>
+                    <p class="contacts-field__item">E-mail: web.red.dino@gmail.com</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone fa-2x"></i>
+                    <p class="contacts-field__item">
+                        056 777 77 777 <br>
+                        050 555 55 55
+                    </p>
+                </div>
+                <div class="social-links">
                     <a href="https://www.facebook.com/groups/709891805825208/?fref=ts" target="_blank">
                         <i class="fa fa-facebook fa-2x"></i>
                     </a>
@@ -148,25 +139,28 @@
                     </a>
                 </div>
 
-                <div class="text-box">
-                    <p>Контакты:</p>
-                    <br>
-                    <p>49000, Украина, г. Днепр (Днепропетровск)
-                        <br>
-                        ул. Центральная, 1а, офис 1</p>
-                    <br>
-                    <p>Телефоны:</p>
-                    <p>056 777 77 77</p>
-                    <p>050 555 55 55</p>
-                    <br>
-                    <p>E-mail: web.red.dino@gmail.com</p>
-                </div>
+            </div>
 
+             <div class="feedback">
+                <form class="feedback__form " action="#">
+                    <div class="top-field"> 
+                      <label for="name" class="label__top"><input type="text" name="name" id="name" placeholder="Ваше имя *" required></label>
+                      <label for="tel" class="label__top label__top-left"><input type="tel" name="tel" id="tel" placeholder="Телефон *"></label>
+                    </div>
+                    <label for="message"><textarea name="message" id="message"  placeholder="Ваше сообщение"></textarea></label>
+                    <input type="submit" id="submitbtn" name="submitbtn" value="Отправить сообщение">
+                </form>
+
+            </div>
         </div>
+
         <div class="copyright">
             <p>© Copyright 2016 | Творческое агенство "Reddino"</p>
         </div>
+
     </footer>
+
     <script type="text/javascript" src="../js/script.js"></script>
+
 </body>
 </html>
