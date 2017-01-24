@@ -407,68 +407,65 @@ body {
     color: #fff;
 }
 
-.about__item {
-    display: flex;
-    justify-content: space-around;
+.about-item {
     color: #fff;
 }
 
-.about__item__empty-block {
-    width: 37%;
-    margin-left: 30px;
-}
-
-.about__item__empty-block--right {
-    margin-left: 0;
-    margin-right: 30px;
+.about__item__empty-block, .about__item__content {
+    width: 39%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+    color: #fff;
+    padding: 2% 0;
+    font-size: 18px;
+    font-family: MyriadPro;    
 }
 
 .about__item__circle {
-    /*     width: 25%; */
-    width: 140px;
-    height: 140px;
-    margin: 0 40px;
-    /*background-color: rgba(239, 1, 17, 0.4);*/
-    border-radius: 50%;
-    border: 2px solid rgb(239, 1, 17);
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 20px;
-}
-
-.about__item__circle p {
-    margin: 0 auto;
-    width: 80%;
-    font-weight: bold;
+    width: 16%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
     text-align: center;
-    line-height: 1.5em
 }
 
-.about__item__content {
-    width: 37%;
-    margin-right: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: MyriadPro;
-    font-size: 20px;
-}
-
-.about__item__content--left {
-    margin-right: 0;
-    margin-left: 30px;
-    font-family: MyriadPro;
-    font-size: 20px;
+.about__item__circle img {
+    width: 75%;
 }
 
 .about__divline {
     height: 100px;
     border-right: 1px solid rgb(239, 1, 17);
-    width: 50%;
+    width: calc(50% - 1px);
     margin: 25px 0;
 }
+
+@media (max-width: 740px) {
+     .about-item {
+        text-align: center;
+    }
+
+     .about__item__empty-block, .about__item__content {
+        width: 80%;
+        margin: 2% 0;
+        margin-left: 10%;
+        text-align: center;
+        font-size: 16px;
+   }
+
+   .about__item__circle  {
+        width: 150px;
+        float: none;
+        margin: 0 auto;
+   }
+
+   .about__divline {
+        margin: 10px 0;
+    }
+}
+
+
 
 /* BLOG */
 
