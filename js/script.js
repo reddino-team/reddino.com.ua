@@ -43,7 +43,7 @@
 $(document).ready(function(){
     $(".top-header__menu").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
-        if (event.currentTarget.innerHtml !== 'Блог') {
+        if (event.currentTarget.innerHTML != 'Блог') {
           event.preventDefault();
           //забираем идентификатор бока с атрибута href
           var id  = $(this).attr('href'),
@@ -52,10 +52,7 @@ $(document).ready(function(){
           $('body,html').animate({scrollTop: top}, 1500);
           //меняем цвет ссылки в меню
           $(this).addClass('menu__item-active').siblings().removeClass('menu__item-active');
-        }
-        else {
-          break; // this jquery error in console //FIX
-        }
+       }
     });
 
    $(window).scroll(function(){
