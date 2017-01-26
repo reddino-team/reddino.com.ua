@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.container {
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+    height: 650px;
+    background: url('../img/header/bg-team.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-header {
+    width: 100%;
+    background: rgba(36, 35, 33, 0.9);
+    position: fixed;
+    z-index: 50000;
+}
+
+.top-header__menu {
+    float: right;
+    margin-top: 10px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 18px;
+    font-family: 'Abeatbykai';
+    font-size: 18px;
+    background-color: rgb(239, 1, 17);
+    border-radius: 3px;
+    margin: 5px 0;
+    display: inline-block;
+    transition: 1s linear;
+}
+
+.menu__item {
+    float: left;
+    position: relative;
+    padding: 10px 5px;
+    margin: 0 5px;
+    font-family: Helvetica;
+    font-size: 85%;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu__item:hover, .menu__item-active {
+    color: #ef0111;
+}
+
+/* Curl Top Left */
+.hvr-curl-top-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.hvr-curl-top-left:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: white;
+  /* IE9 */
+  background: linear-gradient(135deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+  /*For IE7-8-9*/
+  z-index: 1000;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+.hvr-curl-top-left:hover:before, .hvr-curl-top-left:focus:before, .hvr-curl-top-left:active:before {
+  width: 70px;
+  height: 70px;
+}
+
+/* Back Pulse */
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+.hvr-back-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098D1;
+  background-color: #2098d1;
+  color: white;
+}
+
+.blog-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 75px;
+}
+
+.blog-item {
+  width: 900px;
+  height: 320px;
+  position: relative;
+  /*overflow-x: auto;*/
+}
+
+.blog-title {
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+.blog-item__img {
+  width: 500px;
+  height: 300px;
+  float: left;
+
+  background-size: cover;
+}
+
+.blog-item__title {
+  font-size: 40px;
+  line-height: 40px;
+
+  padding-left: 20px;
+}
+
+.sharp {
+  width: 400px;
+  height: 400px;
+
+  background-image: url('/home/alternative/github/reddino.com.ua/blog/img/seo_1.jpg');
+}
+
+.block-landing {
+  background-image: url('../blog/img/landing-page-business-card-website.jpg');
+}
+
+.block-seo {
+  background-image: url('../blog/img/seo_1.jpg');
+}
+
+.block-testing {
+  background-image: url('../blog/img/testing.jpg');
+}
+
+.block-web-analystic {
+  background-image: url('../blog/img/web-analytics.jpg');
+}
