@@ -43,16 +43,16 @@
 $(document).ready(function(){
     $(".top-header__menu").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
-        // if (event.currentTarget.innerHTML != 'Блог') { //<------убрал, потому что не переходило по клику на "БЛОГ"
-        //   event.preventDefault();
+        if (event.currentTarget.innerHTML != 'Блог') {
+          event.preventDefault();
           //забираем идентификатор бока с атрибута href
-          var id  = $(this).attr('href');
+          var id  = $(this).attr('href'),
           //узнаем высоту от начала страницы до блока на который ссылается якорь
           top = $(id).offset().top;
           $('body,html').animate({scrollTop: top}, 1500);
           //меняем цвет ссылки в меню
           $(this).addClass('menu__item-active').siblings().removeClass('menu__item-active');
-       });
+       }
     });
 
    $(window).scroll(function(){
@@ -72,12 +72,8 @@ $(document).ready(function(){
 
    //-------MENU SECONDARY-NAV----------------------------------------------------->
    //on mobile - open/close secondary navigation clicking/tapping the .cd-secondary-nav-trigger
-
-
-   (function ($) {
    var secondaryNav = $('.cd-secondary-nav'),
    	   secondaryNavTopPosition = secondaryNav.offset().top;
-
 
        $(window).on('scroll', function(){
      	      if($(window).scrollTop() > secondaryNavTopPosition ) {
@@ -103,16 +99,16 @@ $(document).ready(function(){
      		  secondaryNav.find('ul').toggleClass('is-visible');
      	});
 
-   	//smooth scrolling when clicking on the secondary navigation items
-          var target= $(this.hash);
-   	      secondaryNav.find('ul a').on('click', function(event){
-          event.preventDefault();
-             $('body,html').animate({
-             'scrollTop': target.offset().top - secondaryNav.height() + 1
-           	 }, 400
-           );
-           //on mobile - close secondary navigation
-           $('.cd-secondary-nav-trigger').removeClass('menu-is-open');
-           secondaryNav.find('ul').removeClass('is-visible');
-       });
+   // 	//smooth scrolling when clicking on the secondary navigation items
+    //       var target= $(this.hash);
+   // 	      secondaryNav.find('ul a').on('click', function(event){
+    //       event.preventDefault();
+    //          $('body,html').animate({
+    //          'scrollTop': target.offset().top - secondaryNav.height() + 1
+    //        	 }, 400
+    //        );
+    //        //on mobile - close secondary navigation
+    //        $('.cd-secondary-nav-trigger').removeClass('menu-is-open');
+    //        secondaryNav.find('ul').removeClass('is-visible');
+    //    });
    });
