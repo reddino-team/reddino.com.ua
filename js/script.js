@@ -104,7 +104,7 @@ $(document).ready(function(){
    	      secondaryNav.find('ul a').on('click', function(event){
           event.preventDefault();
              $('body,html').animate({
-             'scrollTop': target.offset().top - secondaryNav.height() + 1
+             'scrollTop': target.offset()
            	 }, 400
            );
            //on mobile - close secondary navigation
