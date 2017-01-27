@@ -43,16 +43,16 @@
 $(document).ready(function(){
     $(".top-header__menu").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
-        if (event.currentTarget.innerHTML != 'Блог') {
-          event.preventDefault();
+        // if (event.currentTarget.innerHTML != 'Блог') { //<------убрал, потому что не переходило по клику на "БЛОГ"
+        //   event.preventDefault();
           //забираем идентификатор бока с атрибута href
-          var id  = $(this).attr('href'),
+          var id  = $(this).attr('href');
           //узнаем высоту от начала страницы до блока на который ссылается якорь
           top = $(id).offset().top;
           $('body,html').animate({scrollTop: top}, 1500);
           //меняем цвет ссылки в меню
           $(this).addClass('menu__item-active').siblings().removeClass('menu__item-active');
-       }
+       });
     });
 
    $(window).scroll(function(){
@@ -72,8 +72,12 @@ $(document).ready(function(){
 
    //-------MENU SECONDARY-NAV----------------------------------------------------->
    //on mobile - open/close secondary navigation clicking/tapping the .cd-secondary-nav-trigger
+
+
+   (function ($) {
    var secondaryNav = $('.cd-secondary-nav'),
    	   secondaryNavTopPosition = secondaryNav.offset().top;
+
 
        $(window).on('scroll', function(){
      	      if($(window).scrollTop() > secondaryNavTopPosition ) {
