@@ -48,7 +48,8 @@ body {
 
 .top-header {
     width: 100%;
-    background: rgba(36, 35, 33, 0.9);
+    padding: 0 30px;
+    background: rgba(36, 35, 33, 1);
     position: fixed;
     z-index: 50000;
 }
@@ -61,18 +62,19 @@ body {
 .logo {
     text-decoration: none;
     color: #fff;
-    padding: 7px 18px;
+    padding: 10px 7px 10px 10px;
     font-family: 'Abeatbykai';
     font-size: 18px;
     background-color: rgb(239, 1, 17);
     border-radius: 3px;
-    margin: 5px 0;
+    margin: 11px 0;
     display: inline-block;
     transition: 1s linear;
+    float: left;
 }
 
 .menu__item {
-    float: left;
+    /*float: left;*/
     position: relative;
     padding: 10px 5px;
     margin: 0 5px;
@@ -115,6 +117,209 @@ body {
     color: #f1f2f1;
     font-size: 200%;
     text-align: center;
+}
+===================================
+
+
+.cd-secondary-nav {
+    display: inline-block;
+    float: right;
+}
+.cd-secondary-nav ul {
+  list-style: none;
+  position: fixed;
+  right: 5%;
+  bottom: 20px;
+  visibility: hidden;
+  transform: scale(0);
+  transform-origin: 100% 100%;
+  transition: transform 0.3s, visibility 0s 0.3s;
+}
+.cd-secondary-nav ul.is-visible {
+        width: 100%;
+        height: 157px;
+        line-height: 25px;
+        visibility: visible;
+        text-align: center;
+        top: 67px;
+        right: 0px;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: -webkit-transform 0.3s, visibility 0s 0s;
+        -moz-transition: -moz-transform 0.3s, visibility 0s 0s;
+        transition: transform 0.3s, visibility 0s 0s;
+}
+.cd-secondary-nav ul.is-visible li {
+  float: none;
+  }
+  .cd-secondary-nav ul.is-visible li:hover {
+    border-bottom: 1px solid #E41B3F;
+  }
+
+
+/*@media only screen and (min-width: 1170px) {
+  .cd-secondary-nav.is-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 70px;
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 1170px) {
+  #cd-logo.is-hidden {*/
+    /* assign a position fixed and move outside the viewport (on the left) */
+    /*opacity: 0;
+    position: fixed;
+    left: -10%;
+    transition: left 0.3s, opacity 0.3s;
+  }
+  #cd-logo.is-hidden.slide-in {*/
+    /* slide in when the secondary navigation gets fixed */
+    /*left: 5%;
+    opacity: 1;
+  }*/
+
+@media only screen and (min-width: 640px) {
+  .cd-secondary-nav ul {
+    /* reset navigation values */
+      position: static;
+        width: auto;
+        max-width: 100%;
+        visibility: visible;
+        transform: scale(1);
+        list-style: none;
+        /* width: 90%; */
+        /* height: 100%; */
+        display: inline-block;
+        float: right;
+        padding: 20px 0;
+        margin: 0;
+  }
+}
+.cd-secondary-nav ul li {
+  float: left;
+}
+.cd-secondary-nav-trigger {
+    position: fixed;
+    /*bottom: 207px;*/
+    top: 3px;
+    right: 5%;
+    width: 44px;
+    height: 44px;
+
+}
+
+@media only screen and (min-width: 640px) {
+  .cd-secondary-nav-trigger {
+    display: none;
+  }
+}
+/*------------------------------------*/
+.cd-secondary-nav-trigger {
+  position: fixed;
+  bottom: 157px;
+  right: 5%;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 0.25em;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  z-index: 2;
+  border: 2px solid #E41B3F;
+  border-radius: 7px;
+}
+.cd-secondary-nav-trigger .is-visible {
+  width: 100%;
+  background: #E41B3F;
+}
+.cd-secondary-nav-trigger span {
+  /* the span element is used to create the menu icon */
+  position: absolute;
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #f0eee1;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.cd-secondary-nav-trigger span::before, .cd-secondary-nav-trigger span::after {
+  content: '';
+  position: absolute;
+  background: inherit;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.cd-secondary-nav-trigger span::before {
+  right: -10px;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+}
+.cd-secondary-nav-trigger span::after {
+  left: -10px;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+}
+.cd-secondary-nav-trigger.menu-is-open {
+  background: transparent;
+}
+.cd-secondary-nav-trigger.menu-is-open span {
+  background: rgba(240, 238, 225, 0);
+  width: 20px;
+  height: 2px;
+}
+.cd-secondary-nav-trigger.menu-is-open span::before, .cd-secondary-nav-trigger.menu-is-open span::after {
+  background: #f0eee1;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  top: 0;
+  left: 0;
+}
+.cd-secondary-nav-trigger.menu-is-open span::before {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.cd-secondary-nav-trigger.menu-is-open span::after {
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+@media only screen and (min-width: 1170px) {
+  .cd-secondary-nav-trigger {
+    display: none;
+  }
 }
 
 /*<=========БЛОК УСЛУГИ==========>*/
