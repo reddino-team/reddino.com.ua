@@ -789,8 +789,8 @@ body {
 /*<=======FOOTER============>*/
 
 .footer {
-    background: url("../img/lets-get-social.jpg");
-    background-size: cover;
+    background: url(..//img/services/dark_brick_wall.png);
+
     background-blend-mode: multiply;
     color: #fff;
 }
