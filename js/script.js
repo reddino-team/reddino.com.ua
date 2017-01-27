@@ -99,11 +99,12 @@ $(document).ready(function(){
      		  secondaryNav.find('ul').toggleClass('is-visible');
      	});
 
+   	//smooth scrolling when clicking on the secondary navigation items
           var target= $(this.hash);
    	      secondaryNav.find('ul a').on('click', function(event){
           event.preventDefault();
              $('body,html').animate({
-             'scrollTop': target.offset()
+             'scrollTop': target.offset().top - secondaryNav.height() + 1
            	 }, 400
            );
            //on mobile - close secondary navigation
