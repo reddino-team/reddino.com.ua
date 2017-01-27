@@ -1434,6 +1434,12 @@ h1 {
     background-attachment: fixed;
     text-align: center;
 }
+.parallax h1 {
+font-family: 'Abeatbykai';
+font-size: 110%;
+color: rgb(239, 1, 17);
+font-weight: bold;
+}
 
 .pricing {
     background: url(../img/work/wall.png);
