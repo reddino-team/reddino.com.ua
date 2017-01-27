@@ -29,19 +29,25 @@
 <body>
     <header class="header anchor" id="top">
         <section class="top-header">
-            <div class="container top-header__container clearfix">
-                <a href="/" class="logo">reddino</a>
+          <div class="top-header__container clearfix">
+              <a href="/" class="logo" id="cd-logo">reddino</a>
 
-                <nav class="menu top-header__menu">
-                    <!-- ВСТАВИТЬ ССЫЛКИ -->
-                    <a href="#top" class="menu__item menu__item-active">Главная</a>
-                    <a href="#services" class="menu__item">Услуги</a>
-                    <a href="#about" class="menu__item">О нас</a>
-                    <a href="#work" class="menu__item">Наши работы</a>
-                    <a href="blog/blog.html" class="menu__item">Блог</a>
-                    <a href="#contacts" class="menu__item">Контакты</a>
-                </nav>
+              <div class="cd-secondary-nav">
+              <a href="#0" class="cd-secondary-nav-trigger"><span>menu</span></a> <!-- button visible on small devices -->
+
+              <nav class="menu top-header__menu">
+                  <ul class"nav navbar-nav navbar-right">
+                  <!-- ВСТАВИТЬ ССЫЛКИ -->
+                      <li><a href="#top" class="page-scroll menu__item menu__item-active">Главная</a></li>
+                      <li><a href="#services" class="page-scroll menu__item">Услуги</a></li>
+                      <li><a href="#about" class="page-scroll menu__item">О нас</a></li>
+                      <li><a href="#work" class="page-scroll menu__item">Наши работы</a></li>
+                      <li><a href="blog/blog.html" class="page-scroll menu__item">Блог</a></li>
+                      <li><a href="#contacts" class="page-scroll menu__item">Контакты</a></li>
+                  </ul>
+              </nav>
             </div>
+          </div>
         </section>
         <div class="tagline-wrapper">
             <p class="tagline">Welcome To <span class="tagline__reddino">reddino</span></p>
@@ -639,8 +645,8 @@
                 <div>
                     <i class="fa fa-phone fa-2x"></i>
                     <p class="contacts-field__item">
-                        056 777 77 777 <br>
-                        050 555 55 55
+                        <!-- 056 777 77 777 <br> -->
+                        067 454 24 26
                     </p>
                 </div>
                 <div class="social-links">
