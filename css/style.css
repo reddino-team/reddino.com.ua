@@ -118,9 +118,8 @@ body {
     font-size: 200%;
     text-align: center;
 }
-===================================
-
-
+/*===================================*/
+/*---START CD-SECONDARY-NAV------->*/
 .cd-secondary-nav {
     display: inline-block;
     float: right;
@@ -140,7 +139,8 @@ body {
         height: 157px;
         line-height: 25px;
         visibility: visible;
-        text-align: center;
+        text-align: left;
+        font-size: 1.25em;
         top: 67px;
         right: 0px;
         left: 0;
